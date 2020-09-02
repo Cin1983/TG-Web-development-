@@ -1,0 +1,79 @@
+Wat is het verschil tussen internet en het world wide web?
+Antwoord:
+Het internet is een globaal (global) netwerk en het Web, ook wel World Wide Web genoemd is een collectie van informatie die toegangkelijk is via het internet.
+Internet is een infrastructuur en het Web is een service dat op het infrastructuur gegeven wordt.
+
+
+Wat is het verschil tussen HTML, CSS en JavaScript?
+HTML = HyperTextMarkupLanguage (opbouw/structuur van een website)
+CSS = Cascadin Style Sheet (het stylen van een website)
+JavaScript = is een programmeertaal (scripttaal dat gebruikt wordt voor het bouwen van kleine programma's) dat gebruikt wordt om een website levendig en interactief te maken.
+
+Wat is een HTML tag en wat is een HTML element? Hoe open en hoe sluit je een HTML tag?
+Een tag is een opdracht die door een browser kan worden geiterpreteerd. HTML gebruikt tags om bijvoorbeeld de positie en weergave van elementen op een pagina aan te geven.
+Een tag staat altijd tussen <begintag>element</begintag>
+<b>Dit staat vetgedrukt</b> (element)
+Een HTML element= HTML bestaat uit een serie elementen die je kunt gebruiken om verschillende onderdelen van de text te verpakken of te omhullen zodat het zich op een bepaalde manier gaat gedragen.
+
+
+HTML gebruikt basis tags om structuur op te bouwen.
+
+Het HTML element markeert het begin en einde van een HTML-document en geeft aan dat het document HTML-code bevat.
+<html>dit word gebruikt om b.v. document type te beschrijven en aan te geven in welke taal je de text wilt hebben van je website</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+De head wordt gedefinieerd met het HEAD element en bevat informatie, die betrekking heeft op het document, maar niet in
+het documentvenster wordt weergegeven. De informatie kan bijvoorbeeld instructies aan de browser bevatten over hoe het
+document verwerkt of weergegeven moet worden.
+
+In de head van elk document moet in ieder geval het TITLE element worden opgenomen. Hiermee wordt een titel vastgelegd,
+welke in de meeste browsers te zien is in de titelbalk van het venster.
+
+Een uitgebreide beschrijving van de in de head op te nemen informatie is te vinden in het onderdeel Structuur document.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+De body wordt gedefinieerd met het BODY element en bevat de feitelijk inhoud van het document.
+<body></body>
+</html>
+
+Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
+minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.
+
+Met de attributen van het BODY element kun je de basisweergave van een document bepalen. Met het BGCOLOR attribuut
+definieer je welke achtergrondkleur er voor het document gebruikt moet worden, met het TEXT attribuut doe je hetzelfde
+voor de kleur van de tekst. Met de attributen LINK, VLINK en ALINK bepaal je de kleur van achtereenvolgens een link die
+nog niet bezocht is, een link die al wel bezocht is en een link op het moment dat deze wordt geselecteerd door de
+gebruiker. Het BACKGROUND attribuut tenslotte kun je gebruiken om aangeven, dat een afbeelding als achtergrond voor het
+document gebruikt moet worden.
+
+Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur?
+Leg uit.
+
+Structuur is belangrijk voor een mooie overzichtelijke website. Ik vind de code geen juiste structuur hebben omdat het geen footer heeft en omdat ze geen ul/ol hebben gebruikt.
+Het oogt slordig.
+
+
+Wat is het verschil tussen inline en block elementen?
+
+Inline element=
+Inline elementen zijn elementen die dezelfde regel kunnen delen met andere elementen en niet vooraf gegaan en gevolgd
+worden door de overgang naar een nieuwe regel.
+
+block element=
+block-level element begint altijd op een nieuwe regel en neemt de volle breedte van het browservenster in. Het strekt
+zich uit naar links en rechts uit zo ver als het kan
+
+Wat betekent nesting? Codeer een voorbeeld met nesting erin.
+Je kunt elementen in andere elementen steken - we noemen dit nesten. Als we willen zeggen dat onze kat HEEL chagrijnig
+is, kunnen we het woord "heel" in een <strong>-element insluiten. Dat zorgt ervoor dat het woord wordt beklemtoond:
+
+    <p>Mijn kat is <strong>heel</strong> chagrijnig.</p>
+    Je moet er echter wel voor zorgen dat uw elementen correct worden genest: in het voorbeeld hierboven openden we het
+    <p> element eerst en dan het <strong> element. Dus moeten we eerst het <strong> sluiten en dan <p>.
