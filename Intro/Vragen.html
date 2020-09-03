@@ -1,25 +1,54 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGrounds Assignment</title>
+</head>
+<body>
+    
+
+
+<h1>HTML TechGrounds Assignment</h1>
+
 Wat is het verschil tussen internet en het world wide web?
+
 Antwoord:
-Het internet is een globaal (global) netwerk en het Web, ook wel World Wide Web genoemd is een collectie van informatie die toegangkelijk is via het internet.
+Het internet is een globaal (global) netwerk en het Web, ook wel World Wide Web genoemd is een collectie van informatie
+die toegangkelijk is via het internet.
 Internet is een infrastructuur en het Web is een service dat op het infrastructuur gegeven wordt.
 
 
 Wat is het verschil tussen HTML, CSS en JavaScript?
+
 HTML = HyperTextMarkupLanguage (opbouw/structuur van een website)
 CSS = Cascadin Style Sheet (het stylen van een website)
-JavaScript = is een programmeertaal (scripttaal dat gebruikt wordt voor het bouwen van kleine programma's) dat gebruikt wordt om een website levendig en interactief te maken.
+
+JavaScript = is een programmeertaal (scripttaal dat gebruikt wordt voor het bouwen van kleine programma's) dat gebruikt
+wordt om een website levendig en interactief te maken.
+
 
 Wat is een HTML tag en wat is een HTML element? Hoe open en hoe sluit je een HTML tag?
-Een tag is een opdracht die door een browser kan worden geiterpreteerd. HTML gebruikt tags om bijvoorbeeld de positie en weergave van elementen op een pagina aan te geven.
+
+Een tag is een opdracht die door een browser kan worden geiterpreteerd. HTML gebruikt tags om bijvoorbeeld de positie en
+weergave van elementen op een pagina aan te geven.
+<br>
 Een tag staat altijd tussen <begintag>element</begintag>
 <b>Dit staat vetgedrukt</b> (element)
-Een HTML element= HTML bestaat uit een serie elementen die je kunt gebruiken om verschillende onderdelen van de text te verpakken of te omhullen zodat het zich op een bepaalde manier gaat gedragen.
+<br>
+Een HTML element= HTML bestaat uit een serie elementen die je kunt gebruiken om verschillende onderdelen van de text te
+verpakken of te omhullen zodat het zich op een bepaalde manier gaat gedragen.
+
 
 
 HTML gebruikt basis tags om structuur op te bouwen.
 
 Het HTML element markeert het begin en einde van een HTML-document en geeft aan dat het document HTML-code bevat.
-<html>dit word gebruikt om b.v. document type te beschrijven en aan te geven in welke taal je de text wilt hebben van je website</html>
+<html>dit word gebruikt om b.v. document type te beschrijven en aan te geven in welke taal je de text wilt hebben van je
+website
+
+</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,15 +61,18 @@ In de head van elk document moet in ieder geval het TITLE element worden opgenom
 welke in de meeste browsers te zien is in de titelbalk van het venster.
 
 Een uitgebreide beschrijving van de in de head op te nemen informatie is te vinden in het onderdeel Structuur document.
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 </head>
 
 
 De body wordt gedefinieerd met het BODY element en bevat de feitelijk inhoud van het document.
+
 <body></body>
+
 </html>
 
 Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef
@@ -56,8 +88,9 @@ document gebruikt moet worden.
 Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur?
 Leg uit.
 
-Structuur is belangrijk voor een mooie overzichtelijke website. Ik vind de code geen juiste structuur hebben omdat het geen footer heeft en omdat ze geen ul/ol hebben gebruikt.
-Het oogt slordig.
+Structuur is belangrijk voor een mooie overzichtelijke website. Ik vind de code geen juiste structuur hebben omdat het
+geen footer heeft en omdat ze geen ul/ol hebben gebruikt.
+Het oogt slordig. 
 
 
 Wat is het verschil tussen inline en block elementen?
@@ -72,8 +105,320 @@ zich uit naar links en rechts uit zo ver als het kan
 
 Wat betekent nesting? Codeer een voorbeeld met nesting erin.
 Je kunt elementen in andere elementen steken - we noemen dit nesten. Als we willen zeggen dat onze kat HEEL chagrijnig
-is, kunnen we het woord "heel" in een <strong>-element insluiten. Dat zorgt ervoor dat het woord wordt beklemtoond:
+is, kunnen we het woord "heel" in een <strong>-element insluiten. Dat zorgt ervoor dat het woord wordt beklemtoond: 
 
-    <p>Mijn kat is <strong>heel</strong> chagrijnig.</p>
-    Je moet er echter wel voor zorgen dat uw elementen correct worden genest: in het voorbeeld hierboven openden we het
-    <p> element eerst en dan het <strong> element. Dus moeten we eerst het <strong> sluiten en dan <p>.
+<p>Mijn kat is <strong>heel</strong> chagrijnig.</p>
+Je moet er echter wel voor zorgen dat uw elementen correct worden genest: in het voorbeeld hierboven openden we het 
+
+<p> element eerst en dan het <strong> element. Dus moeten we eerst het <strong> sluiten en dan <p>. 
+
+Semantics 
+Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. 
+Wat wordt er bedoeld met HTML semantics? Waarom is het gebruik van semantics belangrijk?
+ 
+ 
+Semantische html is geen nieuwe html-versie. Het legt enkel de nadruk op de overeenkomst tussen de naam van het element
+en de inhoud ervan. Aan de inhoud van de elementen wordt een betekenisvolle naam gegeven.
+
+De naam van een semantisch element drukt duidelijk zijn betekenis uit, zowel voor de ontwikkelaar als voor de browser.
+Semantische html is geen nieuwe html-versie. Het legt enkel de nadruk op de overeenkomst tussen de naam van het element
+en de inhoud ervan. Aan de inhoud van de elementen wordt een betekenisvolle naam gegeven.
+
+Voorbeelden hiervan zijn:
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+When writing semantic markup, we use HTML tags to tell browsers something about the contents of the element. In semantic
+markup, tags are no longer just a way to get content to show up on a web page in a human-readable format.
+
+The tags themselves become a way to tell a machine (whether a browser, a computer, a smartphone, or another smart
+device) something about the meaning of the content.
+
+To write semantic markup, we must use HTML tags correctly so that our markup is both human-readable and
+machine-readable.
+
+
+
+Read more: https://html.com/semantic-markup/#ixzz6Ws4BqvbP
+
+Wat voor content zou je in de volgende elementen gebruiken?
+Geef in je antwoord voor elk element een toelichting.
+<header> Koptekst, zoekmachines makkelijker vindbaar
+    
+● <footer> Adresgegevens door wie de website gemaakt is 
+● <main> Specifies the main content of a document.
+● <nav> Navigatie links
+● <section>defines a section of a document to indicate a related grouping of semantic meaning. It makes sense to use the section element to provide extra context for the parent element.
+                    
+<aside> kan je gebruiken als je nog een side note wilt maken b.v. een blok tekst naast de maintekst.
+The <aside> tag defines some content aside from the content it is placed in.
+                        
+The aside content should be indirectly related to the surrounding content.
+                        
+Tip: The <aside> content is often placed as a sidebar in a document.
+<article> The <article> tag specifies independent, self-contained content.
+                                
+An article should make sense on its own and it should be possible to distribute it independently from the rest of
+the site.
+                                
+Potential sources for the <article> element:
+                                
+Forum post
+Blog post
+News story
+                                        
+Headers 
+Het gebruik van headers is belangrijk voor zoekmachines en de gebruikers van je website.
+Onderzoek en leg uit waarom headers zowel belangrijk zijn voor zoekmachines als
+voor de gebruikers.
+Door het aanbrengen van headings in de HTML van een pagina kunnen zoekmachines de kopteksten van een pagina wel
+herkennen. Door het gebruik van headings is het voor zoekmachines gemakkelijker het onderwerp van de webpagina te
+bepalen. Zoekmachines scannen de headings waarbij heading 1 als meest belangrijk wordt gezien.
+
+Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat:   -->
+
+
+<img src="‪C:\Users\hmgro\Desktop\TechGrounds Web Development\TG_Logo.d5934b2d.png"></img> Absolute path
+
+
+<h1>Headings Opdrachten</h1>
+<h1>Heading</h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<h4>Heading</h4>
+<h5>Heading</h5>
+<h6>Heading</h6>
+
+<!-- Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+Geef hier een voorbeeld bij.
+
+Het <p> -element van HTML vertegenwoordigt een paragraaf van tekst. Paragrafen worden meestal vertegenwoordigd in
+visuele media als blokken tekst, die worden gescheiden van aangrenzende blokken door verticale witruimte en/of
+inspringing op de eerste regel. Paragrafen zijn elementen op blokniveau. 
+
+Onderzoek en leg het verschil tussen het stoppen van alle tekst in één
+paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit. 
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut omnis eligendi iusto, amet quasi esse ullam voluptate ipsum tempora illo nam sapiente quam molestiae a, est excepturi ratione dolores maxime!</p>
+
+<h1>Lorem ipsum dolor sit amet consectetur </h1>
+
+<h2>adipisicing elit. Reiciendis, sunt rerum dolores quia tempore voluptatibus eos atque dolore tempora laudantium aspernatur sint illo ab ex accusantium quo et inventore nemo!</h2>
+
+Reproduceer het volgende resultaat door gebruik te maken van text-headers
+en de paragraaf tags.  -->
+
+<img src="https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png" ></img>
+
+
+
+
+
+<!-- 
+<h2>Mijn Eerste Website</h2>
+<h3>Mijn eerste sub-kop</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit dolores, placeat unde blanditiis distinctio iste tenetur dolor corporis eaque fuga ducimus molestiae ipsum consectetur porro! Laudantium vitae optio quibusdam.</p>
+
+<h3> Mijn tweede sub -kop</h3>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, nobis ducimus nihil earum non similique ullam qui culpa eius molestias iure harum maxime inventore assumenda sed, vitae doloremque ut pariatur?</p>
+
+Horizontal rule
+We willen nu een footer toevoegen onderaan onze pagina. Onderzoek hoe een
+horizontal rule werkt en start aan de onderstaande opdracht.
+Voeg een Horizontal rule toe en reproduceer het volgende resultaat.  -->
+
+<hr>
+
+Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/?fbclid=IwAR1uW1Uzq0Qmcr-SEom1i8gtJvNxeuVOytJNrHWzW24ilX0sdsSR3vKmUXI">Techground Academy</a>
+
+
+
+
+<audio controls autoplay></audio>
+<source src="‪‪https://voca.ro/1dEUEdY7lMeO" type="audio/mpeg">
+
+</audio>
+
+
+<!-- Link tags
+In onze footer willen we graag linken naar de TechGrounds website. Onderzoek hoe
+een link tag werkt.
+Voeg een link tag toe en reproduceer het volgende resultaat in de footer.
+
+Zodra een gebruiker op de link klikt wordt de pagina weergegeven in de huidige
+browser window. Door gebruik te maken van attributen kan de link geopend worden
+in bijvoorbeeld een nieuw tabblad. Voorbeelden van HTML attributen zijn
+bijvoorbeeld een image tag die een “alt” attribuut heeft.
+
+Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen
+en voeg deze als voorbeeld toe op je website.
+
+Het linken naar bestanden op je eigen site
+b.v. 
+<a href="index.html">Met deze link verwijs je naar het bestand "index.html" in dezelfde directory.</a>
+
+Als je hier klikt, ga je naar de tekst "Linken naar bestanden op je eigen site" hierboven op deze pagina.
+
+voorbeeld
+Bij de tekst waar ik naar wil linken heb ik dit geplaatst:
+
+<a name="tekst">Links naar bestanden op je eigen site:</a> 
+<a href="#tekst">hier</a> 
+
+ Het attribuut "target"
+
+Nu nog iets over het attribuut target.
+Dit attribuut wordt vooral gebruikt in pagina's met frames (waarover later meer), maar kan ook gebruikt worden in
+normale pagina's.
+
+Het attribuut target kan vier verschillende waarden hebben:
+
+_blank
+Zorgt ervoor dat de link in een nieuw browserscherm geladen wordt.
+_self
+Link wordt in hetzelfde browserscherm geladen.
+_parent
+Laadt de link in de bron van het document.
+_top
+Laadt de link in het gehele scherm. Alleen van belang bij frames.
+Zo zien de tags er dus uit als je het "target" attribuut gebruikt met ��n van de vier bijbehorende waarden:
+
+<A href="http://www.voorbeeld.nl/" target="_blank">Zo wordt de link in een nieuw browserscherm geladen</A>  -->
+
+<!-- <a href="http://www.voorbeeld.nl/" target="_self">Zo wordt de link in hetzelfde browserscherm geladen</a>
+
+<a href="http://www.voorbeeld.nl/" target="_parent">Zo wordt de link in de bron van het document geladen</a>
+
+<a href="http://www.voorbeeld.nl/" target="_top">Zo wordt de link in het hele scherm geladen (alleen voor
+frames-pagina's)</a>
+
+Afbeeldingen als links gebruiken
+Je kunt ook afbeeldingen als link gebruiken. Deze heten dan clickable images.
+Het maken van de link-tag verschilt niet veel van wat je hierboven geleerd hebt. Alleen gebruik je nu in plaats van de
+onderstreepte link-tekst, het adres van de afbeelding.
+
+Afbeeldingen komen pas in een volgende les aan de orde. Meer over het gebruik van afbeeldingen kun je dus hier lezen.
+Toch is het handig om nu alvast aan te geven hoe je een afbeelding als link kunt gebruiken.
+
+Voor nu volsta ik dus met het weergeven van de tag:
+
+<a href="http://www.voorbeeld.nl/"><IMG src="afbeelding.gif"></a>
+
+Op de plaats waar nu "afbeelding.gif" staat, vul je het adres in van de afbeelding in die je gebruikt voor je link.
+Meestal is dit een .gif of .jpg (.jpeg) bestand.
+
+E-mail Link
+Deze links worden ook wel mailto links genoemd. Deze link verschijnt als elke andere link, maar wanneer er op geklikt
+wordt, kan de bezoeker een e-mail aan je sturen.
+
+Een mailto link maak je als volgt:
+
+<a href="mailto:jouw@emailnaam.nl">Stuur me een e-mail!</a>
+
+De tekst: "Stuur me een e-mail!" wordt weergegeven als de link-tekst.
+
+De mailto link heeft nog wat meer mogelijkheden. Zo kun je een onderwerp toevoegen en een tekst voor de e-mail. Dit
+bespreken we uitgebreid in het artikel Mailto link in HTML. 
+
+Opdrachten 
+Image, audio & video
+Het plaatsen van foto's op een website is een belangrijke toevoeging voor velen. Zo
+bestaan de meeste websites uit een grote collectie van foto's. Vaak kun je logo's,
+teamfoto's of andere soorten afbeeldingen terugvinden op een website. Het stylen
+van de afbeeldingen komt later in het onderdeel CSS aanbod.
+1. Bij het inladen van een bestand is het noodzakelijk om de locatie van het
+bestand aan te geven. Dit kan op 2 manieren:
+● Absolute path
+● Relative path
+Wat houden deze 2 paths in?
+
+Bij het werken met bestandssystemen en webadressen zijn er vaak twee mogelijkheden om, bijvoorbeeld in een HTML-pagina
+of PHP-script, de locatie van een (andere) webpagina, een bestand of een map op te geven: een absoluut pad, of een
+relatief pad. Het verschil zit in de specificiteit van het pad.
+
+Een absoluut pad is een volwaardige, ondubbelzinnige verwijzing naar een bestandslocatie, inclusief alle onderliggende
+mappen, tot en met de zogeheten root, oftewel het laagst mogelijke niveau. Enkele voorbeelden van absolute paden zijn:
+"/help/vragen/wat-is-verschil-tussen-absoluut-relatief-pad-171" (pad van deze pagina), "/var/log/nginx/access.log"
+(Linux) en "C:\Windows\System32\drivers\etc" (Windows).
+
+Een relatief pad gaat daarentegen uit van de huidige locatie waarin een programma, script of de gebruiker zich bevindt.
+Met een relatief pad kan daarom naar een bestand in dezelfde of een hoger of dieper gelegen map verwezen worden zonder
+het volledige (absolute) pad te hoeven herhalen. Bevindt de gebruiker zich bijvoorbeeld op deze website in de map
+"/help/vragen/", dan volstaat in de HTML een relatieve link naar "wat-is-verschil-tussen-absoluut-relatief-pad-171" om
+op het volledige adres "/help/vragen/wat-is-verschil-tussen-absoluut-relatief-pad-171" uit te komen. Bij een relatief
+pad wordt de opgevraagde bestandsnaam door het systeem (of de web browser) dus als het ware achter de huidige map
+geplaatst om het volledige pad te vormen. 
+
+Een image element is voor het inladen van een afbeelding. Afbeeldingen kunnen van
+verschillende formaat zijn. Bijvoorbeeld, een afbeelding kan een JPG formaat zijn.
+
+Zoek uit welke formaat afbeeldingen er nog meer kan zijn.
+Een afbeelding tonen is afhankelijk van of de browser het ondersteunt.
+
+Om een foto of andere afbeelding te laten weergeven op je webpagina, moet hij een van de volgende extensies hebben: .gif,
+.jpg, .png of .svg.
+Bezoek voor meer informatie de volgende website
+https://www.mijn-eigen-website.nl/jpg-gif-png-svg.php 
+
+
+Zoek uit welke browsers er zijn en maak een lijst van je antwoord.
+
+Internet Explorer
+Brave
+Google Chrome.
+Mozilla Firefox.
+Microsoft Edge.
+Internet Explorer.
+Apple Safari.
+Opera Browser. 
+
+Onderzoek hoe het plaatsen van een foto gedaan wordt en plaats deze boven
+en onderaan je website door zowel gebruik te maken van de absolute path en
+relative path. 
+
+
+
+Aan de img element kan je ook de alt attribute gebruiken.
+
+Wat houdt de alt attribute in? En waarom is het handig om de alt attribuut te
+gebruiken?
+
+
+Het alt-attribuut biedt in html-code een mogelijkheid om een omschrijving toe te voegen aan afbeeldingen. Het
+alt-attribuut is ook waardevol voor zoekmachines en andere robots. Zij kijken naar de inhoud van de alt-tag om te
+bepalen wat er op een afbeelding te zien is. 
+
+
+In de sound folder staat een explosion.mp3 bestand.
+Laadt dit bestand in als een audio op het scherm  
+
+
+Extra: Maak het leuker door de audio op repeat te zetten.
+Tip: gebruik controls attribute om audio af te spelen.
+Een audio bestand heeft verschillende formaten. Niet alle formaten worden 
+ondersteund door de browser. Hiervoor is een oplossing voor. 
+
+
+Speel een audio bestand af met
+<source> tag. Leg uit wat hier het voordeel
+van is.
+
+
+Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
+als een video op het scherm.
+Tip: De video is veel groter dan het scherm. Zoek uit welke attribuut 
+
+
+
+
