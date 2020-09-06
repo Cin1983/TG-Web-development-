@@ -1,12 +1,21 @@
+<img src="/HTML/HTML images/TG_Logo.d5934b2d.png"></img>
+
+
+
 <h1>HTML TechGrounds Assignment</h1>
 <!DOCTYPE html>
 <html lang="en">
+
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
+
 
 <body>
 
@@ -23,10 +32,6 @@
         <li><a href="#Monkeys">Monkeys</a></li>
         <li><a href="#Hippopotamus">Hippopotamus</a></li>
     </ul>
-
-
-
-
 
 
 
@@ -166,7 +171,7 @@ machine-readable. -->
     <h5>Heading</h5>
     <h6>Heading</h6>
 
-<!-- Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+    <!-- Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
 Geef hier een voorbeeld bij.
 
 Het <p> -element van HTML vertegenwoordigt een paragraaf van tekst. Paragrafen worden meestal vertegenwoordigd in
@@ -184,8 +189,6 @@ paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit.
 
 Reproduceer het volgende resultaat door gebruik te maken van text-headers
 en de paragraaf tags.  -->
-
-    <img src="/HTML/HTML images/TG_Logo.d5934b2d.png"></img>
 
 
 
@@ -302,45 +305,46 @@ en de paragraaf tags.  -->
         <input type="radio" name="gender" value="other"> Other
     </form>
 
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="fiets">
     <label for="vehicle1"> I have a bike</label><br>
-    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="auto">
     <label for="vehicle2"> I have a car</label><br>
-    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boot">
     <label for="vehicle3"> I have a boat</label><br>
 
 
     <h2>Password field</h2>
 
-    <p>The <strong>input type="password"</strong> defines a password field:</p>
+    <p>This <strong input type="password" </strong> defines a password field:</p>
 
     <form action="/action_page.php">
-        <label for="username">Username:</label><br>
+        <label for="username"> </label>Username:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="pwd">Password:</label><br>
         <input type="password" id="pwd" name="pwd"><br><br>
         <input type="submit" value="Submit">
     </form>
-
-    <input type="reset">
     <br>
+    <input type="reset">
+    <br><br>
     <input type="submit">
 
+    <br><br>
+    <fieldset>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"> <input type="search">
+        <input type="time">
+    </fieldset>
+
     <br>
 
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday">
-
-    <input type="search">
-
-    <br>
-    <input type="time">
-    <br>
     <input type="hidden" id="custId" name="custId" value="3487">
-
+    <br>
 
     <label for="email">Enter your email:</label>
     <input type="email" id="email" name="email"><input type="submit">
+    <br>
+    <br>
 
     <fieldset>
         <legend>Persoonsgegevens</legend>
@@ -362,10 +366,23 @@ en de paragraaf tags.  -->
         <input type="submit"> <input type="reset">
     </fieldset>
 
+    <br><br>
+    <img src="https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png" width="40%">
+
+    <br><br>
+    <label for="wigs">Kies een pruik uit:</label>
+    <select id="wigs" name="wigs">
+        <option value="Suzan">Suzan</option>
+        <option value="Mandy">Mandy</option>
+        <option value="Bambi"> Bambi</option>
+        <option value="Sandy">Sandy</option>
+    </select>
 
 
 
-<!-- In onze footer willen we graag linken naar de TechGrounds website. Onderzoek hoe
+
+
+    <!-- In onze footer willen we graag linken naar de TechGrounds website. Onderzoek hoe
 een link tag werkt.
 Voeg een link tag toe en reproduceer het volgende resultaat in de footer.
 
@@ -502,8 +519,7 @@ Een afbeelding tonen is afhankelijk van of de browser het ondersteunt.
 
 Om een foto of andere afbeelding te laten weergeven op je webpagina, moet hij een van de volgende extensies hebben: .gif,
 .jpg, .png of .svg.
-Bezoek voor meer informatie de volgende website
-https://www.mijn-eigen-website.nl/jpg-gif-png-svg.php 
+
 
 
 Zoek uit welke browsers er zijn en maak een lijst van je antwoord.
@@ -529,11 +545,322 @@ gebruiken?
 
 Het alt-attribuut biedt in html-code een mogelijkheid om een omschrijving toe te voegen aan afbeeldingen. Het
 alt-attribuut is ook waardevol voor zoekmachines en andere robots. Zij kijken naar de inhoud van de alt-tag om te
-bepalen wat er op een afbeelding te zien -->
+bepalen wat er op een afbeelding te zien 
+
+Naast input element heb je ook een select element. Hiermee kan je een
+dropdown list maken. Maak een drop down list.
+
+We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+waar je in kan gebruiken en leg dat uit?
+
+Je kunt een dropdown list gebruiken om b.v. aan te geven wat voor maat schoenen je wilt kiezen (webshop)
+Een radio button kun je gebruiken als je b.v. wilt weten of het een man of een vrouw is. Je kunt het b.v. gebruiken of de gebruiker oud genoeg is om de site te bezoeken
+checkbox kun je b.v. aangeven welke codeertalen je al hebt geleerd. HTML check!
+
+Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+willen we graag het volgende weten:
+● Naam van dat persoon
+● Off hij/zij lidmaatschap heeft
+● E-mail van dat persoon
+● Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash
+● Datum en tijdstip om te reserveren
+● Een checkbox waarbij de gebruiker akkoord gaat over de reserverings
+voorwaardes
+● Een submit knop
+
+Maak een reserverings formulier om een boek te reserveren. In dit formulier
+willen we graag het volgende weten:
+● Naam van dat persoon
+● Telefoonnummer
+● E-mail van dat persoon
+● Naam van dat boek
+● Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
+zijn.
+● Een submit knop
+
+HTML tables
+Om een tabel te maken heb je volgende elementen nodig:
+● <table> container tag definieert een HTML tabel
+● <thead>thead gebruiken wij om onze headers te groeperen,
+●<tbody>, tbody om alle basis content te
+groeperen en tfooter voor de content die we als footer content zien. Als voorbeeld
+kunnen we alle headers in thead stoppen, alle basic data in tbody
+●<tfoot>
+● <th> tafelkoptext
+● <tr> tafelrij
+● <td> tafeldefinitie b.v. naam
+ Geef voor elke element een definitie.
+
+-->
+
+    <br><br>
+
+    <fieldset>
+        <form name="reserveringsformulier" action="default.html" method="POST">
+            <legend>Sport Reserveringsformulier</legend>
+            <label for="fname">Voornaam:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname"> Achternaam:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+            <label for="lidmaatschap">Lidmaatschap:</label>
+            <input type="radio" name="lidmaatschap" value="wel lid"> Ja
+            <input type="radio" name="lidmaatschap" value="niet lid">Nee <br><br>
+            <label for="email">E-mail:</label>
+            <input type="text" id="e-mail" name="e-mail">
+
+
+            <br><br>
+            <label for="tennis"> Maak een keuze :</label>
+            <select id="tennis" name="tennis">
+                <option value="Tafeltennis">Tafeltennis</option>
+                <option value="Badminton">Badminton</option>
+                <option value="Squash"> Squash</option>
+            </select>
+            <br> <br>
+
+            <label for="Reserveer">Reserveer:</label>
+            <input type="date" id="reserveer" name="reserveer">
+            <input type="time">
+            <br>
+            <br>
+            <fieldset>
+                <h5><em>Gaat u akkoord met de algemene voorwaarden?</em></h5>
+                <input type="checkbox" id="voorwaarden" name="voorwaarden" value="akkoord">
+                <label for="voorwaarden">
+                    <h5>Ik ga akkoord</h5>
+                </label>
+                <input type="checkbox" id="voorwaarden" name="voorwaarden" value="niet akkoord">
+                <label for="voorwaarden">
+                    <h5>Ik ga niet akkoord</h5>
+                </label> <input type="submit">
+            </fieldset>
+            <br>
+        </form>
+    </fieldset>
+
+    <br><br>
+    <form name="boekenReserveerLijst" action="default.html" method="POST">
+        <fieldset>
+            <legend>Reserveer hier uw boek</legend>
+            <label for="fname">Voornaam:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname"> Achternaam:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="telefoonnummer">Telefoonnummer</label>
+            <input type="text" id="telefoonummer" name="telefoonnummer"><label for="e-mail"> E-mailadres:</label>
+            <input type="text" id="e-mail" name="e-mail">
+            <br>
+            <br>
+            <table border="1" cellspacing="0" width="670">
+
+                <tr>
+                    <td> Domain Driven Design <input type=checkbox></td>
+
+                    <td> Design Patterns <input type=checkbox></td>
+                </tr>
+                <tr>
+                    <td> Clean Code <input type=checkbox></td>
+
+                    <td> Mythical Man Month<input type=checkbox></td>
+                </tr>
+                <tr>
+                    <td> Code Complete <input type=checkbox></td>
+
+                    <td>
+                        <h5><em>Kies minimaal 1 boek uit</em></h5>
+                </tr>
+
+            </table>
+            <br>
+
+            <input type="submit">
+
+        </fieldset>
+
+    </form>
+
+    <form name="deelname" action="default.html" method="POST">
+        <fieldset>
+            <legend>Deelnamelijst TechGrounds</legend>
+            <label for="fname">Voornaam:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname"> Achternaam:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="telefoonnummer">Telefoonnummer</label>
+            <input type="textarea" id="telefoonummer" name="telefoonnummer"><label for="e-mail"> E-mailadres:</label>
+            <input type="textarea" id="e-mail" name="e-mail">
+            <br>
+            <br>
+
+            <label for="textarea>"> Motvatie:</label><br>
+            <textarea id="motivatie" name="motivatie" rows="4" cols="50">
+
+              </textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+    </form>
+
+</html>
+
+</fieldset>
+
+</form>
+<br>
+<fieldset>
+    <table>
+        <caption><b>Namenlijst<b></caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Telefoonnr</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>41</td>
+            <td>+31 12345678</td>
+        </tr>
+        <tr>
+            <td>Steven</td>
+            <td>Smith</td>
+            <td>32</td>
+            <td>+31 12345678</td>
+        </tr>
+        <tr>
+            <td>Alexander</td>
+            <td>Beave</td>
+            <td>16</td>
+            <td>+31 12345678</td>
+        </tr>
+    </table>
+</fieldset>
+<br><br>
+
+<fieldset>
+    <legend>Agenda</legend>
+
+    <table border="1" cellspacing="0" width="800">
+        <thead>
+            <tr>
+                <th>Maandag</th>
+                <th>Dinsdag</th>
+                <th>Woensdag</th>
+                <th>Donderdag</th>
+                <th>Vrijdag</th>
+            </tr>
+
+            <tr>
+                <th>Bloemen planten</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Fietsen</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Huiswerk maken</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>Rust</th>
+                <th>Zingen</th>
+            </tr>
+
+
+            </tfoot>
+    </table>
+
+
+
+</fieldset>
+<br><br>
+<table border="1" cellspacing="0" width=" 640">
+    <tr>
+        <td>Sport</td>
+        <td>Aantal recreanten</td>
+        <td>Aantal competitie spelers</td>
+        <td>Totale deelnemers </td>
+    </tr>
+    <tr>
+        <td>Badminton</td>
+        <td>10</td>
+        <td>30</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>Recket sport Tafeltennis</td>
+        <td>59</td>
+        <td>30</td>
+        <td>89</td>
+    </tr>
+    <tr>
+        <td>Tennis</td>
+        <td>159</td>
+        <td>30</td>
+        <td>189 </td>
+    </tr>
+    <tr>
+        <td>voetbal</td>
+        <td>88</td>
+        <td>40</td>
+        <td>128</td>
+    </tr>
+    <tr>
+        <td>Basketbal</td>
+        <td>60</td>
+        <td>40</td>
+        <td>100 </td>
+    </tr>
+    <tr>
+        <td>Vollybal</td>
+        <td>35</td>
+        <td>20</td>
+        <td>55</td>
+    </tr>
+
+</table>
 
 </body>
+
+
+</html>
+
+
+<table border="1" cellspacing="0" width=" 640">
+
+    <tr>
+        <td>Kinderen</td>
+        <td>Muizen</td>
+        <td>Honden</td>
+        <td>Kippen </td>
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>6</td>
+        <td>9</td>
+        <td>4</td>
+
+
+<hr>
 <footer>
-    <hr>
+
+
     Deze website is gebouwd vanuit de
     <a href="https://techgrounds.nl/?fbclid=IwAR1uW1Uzq0Qmcr-SEom1i8gtJvNxeuVOytJNrHWzW24ilX0sdsSR3vKmUXI">Techground
         Academy</a>
@@ -542,4 +869,3 @@ bepalen wat er op een afbeelding te zien -->
 
 </footer>
 
-</html>
