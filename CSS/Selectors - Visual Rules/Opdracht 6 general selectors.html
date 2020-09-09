@@ -1,0 +1,59 @@
+<!-- Opdracht 6
+Verder heb je ook nog de volgende selectors:
+
+● general selectors
+
+Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je antwoord naar dat html bestand.
+Geef in je antwoord ook aan wat de voordelen zijn van elk selector.
+De general sibling selecteerder selecteerd alle elementen die siblings zijn van een gespecifeerde element.
+The general sibling selector selects all elements that are siblings of a specified element.
+
+The following example selects all <p> elements that are siblings of
+<div> elements
+
+div ~ p {
+background-color: yellow; -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style type="text/css">
+         h2 ~ p {
+            color: greenyellow;
+        }
+
+        h1~h4{
+            color:indigo;
+        }
+
+
+    </style>
+
+    <header>
+        <h1> Techgrounds</h1>
+        <h4> <em>Make the most of it!</em></h4>
+
+    </header>
+
+
+    <div>
+        <h2> I love coding!</h2>
+        <p> We love coding!</p>
+
+        <a
+            href="http://127.0.0.1:5500/CSS/Selectors%20-%20Visual%20Rules/Opdracht%206%20general%20selectors.html">Techgrounds</a>
+    </div>
+
+
+
+
+</body>
+
+</html>
