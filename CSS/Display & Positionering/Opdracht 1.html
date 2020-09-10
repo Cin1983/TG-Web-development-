@@ -1,0 +1,74 @@
+<!-- Opdracht 1
+Welke position properties zijn er? Leg voor elke position property uit wat het doet. Geef ook aan welke default position
+waarde elementen hebben die je gebruikt in html.
+De positie property specificeerd hoe een bepaald element gepositioneerd wordt.
+
+
+static
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+div.static {
+position: static;
+border: 3px solid #73AD21;
+}
+relative
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away
+from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+div.relative {
+position: relative;
+left: 30px;
+border: 3px solid #73AD21;
+}
+
+fixed
+An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place
+even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+
+Notice the fixed element in the lower-right corner of the page. Here is the CSS that is used:
+div.fixed {
+position: fixed;
+bottom: 0;
+right: 0;
+width: 300px;
+border: 3px solid #73AD21;
+}
+
+absolute
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned
+relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with
+page scrolling.
+div.relative {
+position: relative;
+width: 400px;
+height: 200px;
+border: 3px solid #73AD21;
+}
+div.absolute {
+position: absolute;
+top: 80px;
+right: 0;
+width: 200px;
+height: 100px;
+border: 3px solid #73AD21;
+}
+
+sticky
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a
+given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Property Description
+bottom Sets the bottom margin edge for a positioned box
+clip Clips an absolutely positioned element
+left Sets the left margin edge for a positioned box
+position Specifies the type of positioning for an element
+right Sets the right margin edge for a positioned box
+top Sets the top margin edge for a positioned box
+z-index Sets the stack order of an element -->
