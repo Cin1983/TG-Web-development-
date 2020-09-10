@@ -1,0 +1,57 @@
+<!-- Opdracht 9
+Maak een aantal voorbeelden van boxen en maak gebruik van steeds verschillende margin, padding en border properties -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+            box-sizing: border-box;
+        }
+
+        .box-one {
+    
+            background-color: hotpink;
+            border:5px solid chartreuse;
+            padding:20px;
+            height:75px;
+            width:fit-content;
+            margin:70px;
+        }
+
+        .box-two {
+            background-color: hotpink;
+            border:5px solid chartreuse;
+            padding:30px;
+            height:75px;
+            margin:30px;
+            width:fit-content;
+        }
+
+        .box-one:hover{
+            background-color:orange;
+        }
+       .box-two:hover {
+           background-color: orange;
+
+        }
+    </style>
+
+    <div class="box-one">
+        <h1>TechGrounds</h1>
+    </div>
+    <div class="box-two">
+        <h1>TechGrounds</h1>
+    </div>
+</body>
+
+</html>
