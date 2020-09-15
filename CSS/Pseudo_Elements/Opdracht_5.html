@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementen</title>
+    <style>
+        p {
+            position: relative;
+            width: 500px;
+            height: 650px;
+            font-family: monospace;
+            background-image: url(https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png);
+        }
+
+        p ::before {
+            display: "";
+            position: absolute;
+            border: 3px solid greenyellow;
+            top: 0px;
+            left: 0px;
+            background-color: indianred;
+            width: 500px;
+            height: 650px;
+
+        }
+
+        p ::after {
+            display: "";
+            position: absolute;
+            border: 3px solid greenyellow;
+            bottom: 0px;
+            right: 0px;
+            background-color: indianred;
+            width: 500px;
+            height: 650px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi explicabo qui obcaecati voluptas similique
+            iure
+            maxime dicta accusamus eveniet illo adipisci ullam culpa recusandae eum impedit architecto quisquam fuga
+            optio
+            laudantium dolorem, nemo beatae cumque. At et ipsum sint enim ea, aspernatur, eveniet odio eligendi minima
+            ratione corporis expedita animi.</p>
+    </div>
+</body>
+
+</html>
