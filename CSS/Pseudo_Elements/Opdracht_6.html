@@ -7,10 +7,17 @@
     <title>Document</title>
 
     <style>
-        .circle {
+        body {
+            padding: 50px;
+            
+        }
+        
+
+        .circle,.circle_2,.circle_3 {
+            
             position: relative;
-            border-radius: 100%;
-            background-color: purple;   
+            border-radius: 50%;
+            background-color: purple;
             padding: 20px;
             height: 65px;
             width: 65px;
@@ -21,26 +28,98 @@
 
         .circle ::before {
             position: absolute;
-            display: "";
-            border-radius: 85%;
+            content: ".";
+            border-radius: 50%;
             background-color: purple;
-            height: 40px;
-            width: 40px;
-            left: 0;
-            right: 0;
+            color: white;
+            height: 55px;
+            width: 45px;
+            left: -25px;
+
 
         }
+
+        .circle ::after {
+            position: absolute;
+            content: ".";
+            border-radius: 50%;
+            background-color: purple;
+            color: white;
+            height: 55px;
+            width: 45px;
+            right: -25px;
+
+        }
+         .circle_2 ::before {
+            position: absolute;
+            content: ".";
+            border-radius: 50%;
+            background-color: purple;
+            color: white;
+            height: 55px;
+            width: 45px;
+            left: -25px;
+
+
+        }
+
+        .circle_2 ::after {
+            position: absolute;
+            content: ".";
+            border-radius: 50%;
+            background-color: purple;
+            color: white;
+            height: 55px;
+            width: 45px;
+            right: -25px;
+
+        }
+         .circle_3 ::before {
+            position: absolute;
+            content: ".";
+            border-radius: 50%;
+            background-color: purple;
+            color: white;
+            height: 55px;
+            width: 45px;
+            left: -25px;
+
+
+        }
+
+        .circle_3 ::after {
+            position: absolute;
+            content: ".";
+            border-radius: 50%;
+            background-color: purple;
+            color: white;
+            height: 55px;
+            width: 45px;
+            right: -25px;
+
+        }
+        .alles{
+            display:flex;
+               
+        }
+
+
     </style>
 </head>
 
 <body>
+    <div class="alles">
+
     <div class="circle">
         <h1>1</h1>
-        
-        <h1>2</h1>
-        <h1>3</h1>
-
     </div>
+    <div class="circle_2">
+        <h1>2</h1>
+    </div>
+    <div class="circle_3">
+        <h1>3</h1>
+    </div>
+</div>
 
 </body>
 

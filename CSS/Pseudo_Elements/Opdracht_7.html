@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .vierkant {
+            position: relative;
+            background:purple;
+            width: 180px;
+            height: 180px;
+            margin: 50px;
+            /* transform: rotate(30deg); */
+        }
+
+        .vierkant::before {
+            transform: rotate(30deg);
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 180px;
+            width: 180px;
+            background: purple;
+
+        }
+
+        .vierkant::after {
+            transform: rotate(60deg);
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            top:0;
+            height: 180px;
+            width: 180px;
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vierkant">
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
