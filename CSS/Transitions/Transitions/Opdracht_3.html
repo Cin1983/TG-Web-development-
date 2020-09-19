@@ -1,0 +1,111 @@
+<!-- Transitions kent verschillende transition-timing. Maak het voorbeeld na. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pink {
+            color: hotpink;
+            height: 50px;
+            width: 50px;
+            border: 3px solid hotpink;
+            margin-bottom: 10px;
+            transition-property: width;
+            transition-delay: 0.1ms;
+            transition-duration: .5s;
+            transition-timing-function:linear;
+        }
+
+        .pink:hover {
+            width: 300px;
+        }
+
+        .blue {
+            color: blue;
+            height: 50px;
+            width: 50px;
+            border: 3px solid blue;
+            margin-bottom: 10px;
+            transition-property: width;
+            transition-delay: 0.1ms;
+            transition-duration: .2s;
+            transition-timing-function:ease-in ;
+        }
+
+        .blue:hover {
+            width: 300px;
+        }
+
+        .orange {
+            color: orange;
+            height: 50px;
+            width: 50px;
+            border: 3px solid orange;
+            margin-bottom: 10px;
+            transition-property: width;
+            transition-delay: 0.1ms;
+            transition-duration: 0.2s;
+            transition-timing-function:ease-out ;
+        }
+
+        .orange:hover {
+            width: 300px;
+        }
+
+        .lime {
+            color: greenyellow;
+            height: 50px;
+            width: 50px;
+            border: 3px solid greenyellow;
+            margin-bottom: 10px;
+            transition-property: width;
+            transition-delay: 0.1ms;
+            transition-duration: 0.2s;
+            transition-timing-function:ease-in-out;
+        }
+
+        .lime:hover {
+            width: 300px;
+        }
+
+        .softpink {
+            color: pink;
+            height: 50px;
+            width: 50px;
+            border: 3px solid pink;
+            margin-bottom: 10px;
+            transition-property: width;
+            transition-delay: 0.1ms;
+            transition-duration: .5s;
+            transition-timing-function:ease ;
+        }
+
+        .softpink:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pink">
+        <block>1</block>
+    </div>
+    <div class="blue">
+        <block>2</block>
+    </div>
+    <div class="orange">
+        <block>3</block>
+    </div>
+    <div class="lime">
+        <block>4</block>
+    </div>
+    <div class="softpink">
+        <block>5</block>
+    </div>
+
+</body>
+
+</html>
