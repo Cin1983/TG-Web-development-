@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
     <style>
         body {
             font-family: Lobster, cursive;
             color: black;
+            height: 80%;
         }
-
 
         h4,
         p {
@@ -135,7 +132,7 @@
 
         .menu_colomn {
             background-color: grey;
-            display: inline-flexbox;
+            margin-top: 300px;
             width: 300px;
             height: 300px;
             flex-wrap: wrap;
@@ -145,24 +142,51 @@
             display: flex;
             flex-wrap: wrap;
             padding-left: 30px;
-            margin-bottom: 20px;
+            margin-right: 47px;
+            margin-top:70px;
+            margin-bottom: 30px;
             justify-content: space-around;
-        }
-
-        .footer_box {
-            display: inline-block;
-            background-color: rgb(128, 179, 128);
-            color: rgb(110, 53, 201);
-            height: 20em;
-            width: 100em;
         }
 
         .pasta_dish>img {
             width: 50%;
             height: 50%;
         }
-    </style>
 
+        .menu_item {
+            margin-bottom: 3em;
+            
+        }
+
+        .bakker{
+            margin-top:30px;
+            margin-left:50px; 
+        }
+
+        .footer_box {
+            display:flex;
+            justify-content:space-evenly;
+            background-color: rgb(128, 179, 128);
+            color: rgb(97, 135, 216);
+
+            height:225px;
+            width: 100%;
+        }
+
+        .location-west {
+         
+            width:300px;
+            height:150px;
+            font-size: 12px;
+        }
+
+        .navigate {
+         
+            width:300px;
+            height:150px;
+            font-size: 12px
+        }
+    </style>
 </head>
 
 <body>
@@ -172,7 +196,6 @@
         <a href="#Contact/">Contact</a>
     </nav>
     <div>
-
         <div class="cooking">
             <div class="cooking_container">
                 <h1>Cooking</h1>
@@ -181,13 +204,9 @@
                 <button class="button_green">SHOW MORE</button>
                 <button class="button_pink">BUY</button>
             </div>
-
         </div>
-
         <div class="dish">
-
             <h1>Populaire gerechten</h1>
-
             <div class="pasta_dish"><img src="/CSS/circle-cropped (1).png">
                 <h4>Pasta<span>€8,99</span></h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto libero dignissimos quod vero
@@ -207,70 +226,83 @@
                     consectetur
                     voluptate.</p>
                 <span> <a href="//www.techgrounds.nl/" target="_blank">show..</a></span>
-
-
             </div>
-
-
         </div>
-
         <div class="container_menu">
             <h1>Menu</h1>
             <div class="bakker">
                 <img src="/CSS/chef1 (1).webp">
             </div>
-
-            <div class="menu_column"> Pasta <span>€8,99 </span>
-
+            <div class="menu_column">Pasta<span>€8,99 </span>
                 <div class="menu_item">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
-
-
                 </div>
-                <br><br>
                 <div class="menu_item">Pasta <span>€8,99</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
-
                 </div>
-                <br><br>
                 <div class="menu_item">Pasta <span>€8,99</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
-
                 </div>
-                <br><br>
+                <div class="menu_item">Pasta <span>€8,99</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
+                </div>
             </div>
             <div class="menu_column">
                 <div class="menu_item">Pasta<span>€8,99</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
-
                 </div>
-                <br><br>
                 <div class="menu_item">Pasta<span>€8,99</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
-
                 </div>
-                <br><br>
                 <div class="menu_item">Pasta<span>€8,99</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
+                </div>
+                <div class="menu_column">
+                    <div class="menu_item">Pasta<span>€8,99</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
+                    </div>
 
                 </div>
-                <br><br>
+
+
+            </div>
+
+
+            <div class="footer_box">
+                <div class="location-west">
+
+
+                    <h3>Contact:</h3>
+                    <p>
+                        Osdorpplein 16,
+                        1234 AB Amsterdam
+                        Tel nr: 1234556
+                        Openingstijden ma t/m vr 10:00 - 22:00 uur
+                        <!-- <i class="lni lni-instagram"></i>
+                    <i class="lni lni-twitter"></i>
+                    <i class="lni lni-facebook"></i> -->
+                    </p>
+
+                    <div class="navigate">
+                        <h3>contact</h3>
+                        <p>
+                            Navigation
+                            1234 AB Amsterdam
+                            Tel nr: 1234556
+
+                        </p>
+                    </div>
+                </div>
             </div>
 
 
         </div>
 
-        <footer>
-            <div class="footer_box">
-                <!-- <h5>contact</h5>
-                <p>
-                    Osdorpplein 16,
-                    1234 AB Amsterdam
-                    Tel nr: 1234556
-                    Openingstijden ma t/m vr 10:00 - 22:00 uur
-                </p> -->
-            </div>
-        </footer>
+
+
+    </div>
+
+
 </body>
 
 </html>
