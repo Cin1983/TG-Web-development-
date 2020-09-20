@@ -3,38 +3,60 @@ Maak het onderstaande na met flexbox. Properties die je o.a dient te gebruiken z
 ● display
 ● justify-content
 ● flex-direction -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            background-color: black;
+        }
 
-<style>
-.boxOpdracht{
-display:;
-flex-flow:;
-background-color:deeppink;
-margin:30px;
-height:450px;
-width:500px;
+        .box_1 {
+            display:inline-block;
+            background-color: hotpink;
+            width: 700px;
+            height: 35px;
+        }
 
-}
+        .box_2 {
+            display:block;
+            background-color: hotpink;
+            width: 350px;
+            height: 35px;
+            margin-top:10px;
+        }
+        .box_3{
+            display: flex;
+            background-color: hotpink;
+            width: 390px;
+            height: 35px;
+            margin-top:10px;
 
-.box{
-    background-color:purple;
-    margin:15px;
-    padding:30px;
+        }
 
-
-}
-</style>
+        .box{
+            display:inline-flex;
+            justify-content:left;
+            background-color: hotpink;
+            width: 390px;
+            height: 35px;
+            margin-top:10px;
+        }
+    </style>
 </head>
+
 <body>
-    
 
-
-
+    <div class="box_1"></div>
+    <div class="box_2"></div>
+    <div class="box_3"></div>
+    <div class="box_4"></div>
 
 </body>
+
 </html>
