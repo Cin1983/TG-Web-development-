@@ -1,0 +1,51 @@
+
+
+.memberlist {
+  width: 31.25em;
+  height: 250px;
+  padding: 30px;
+  padding-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #4b86cb;
+  font-family: Tahoma;
+  font-size: 20px;
+}
+
+.color-row {
+  background: #a0aec0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.additional_container input[type='text'] {
+  background-color: #c5deea;
+  border-radius: 3px;
+  border: transparent;
+  
+}
+
+.additional_container label {
+  display: block;
+}
+
+
+input[type='text' i] {
+  padding: 1px 2px;
+}
+
+.additional_container {
+  display:flex;
+  justify-content: space-around;
+  /* border: 3px solid transparent; */
+  flex-wrap: wrap;
+  margin: 30px;
+  padding: 30px;
+  width: 75%;
+  padding-top: 10px;
+}
