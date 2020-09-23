@@ -41,7 +41,7 @@ nav {
   height: 250px;
   padding: 30px;
   padding-top: 30px;
-  margin-left: 200px;
+  margin-left: 350px;
 }
 
 h1 {
@@ -66,13 +66,17 @@ table {
   background-color: #c5deea;
   border-radius: 3px;
   border: transparent;
+  margin-bottom: 0.5em;
+  margin-right: 0.4em;
   
 }
 
-/* .additional_container label {
-  
+/* .additional_container span  {
+  display: inline-block;
 } */
-
+.additional_container span label{
+  display: block;
+}
 
 input[type='text' i] {
   padding: 1px 2px;
@@ -81,11 +85,11 @@ input[type='text' i] {
 
 .additional_container {
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   border: 3px solid transparent;
   flex-wrap: wrap;
-  margin-left: 50px;
-  padding: 30px;
-  width: 75%;
-  padding-top: 10px; 
+  margin-left:450px;
+  width: 45%;
+  text-align: left; 
+  
 }
