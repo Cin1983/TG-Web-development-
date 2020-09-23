@@ -1,17 +1,56 @@
+html, body{
+margin:0;
+padding:0;
+
+}
 
 
-.memberlist {
-  width: 31.25em;
+
+nav h1 {
+  
+  color: beige;
+}
+
+ul li{
+  list-style-type: none;
+  margin-bottom: 15px;
+
+}
+
+
+
+ul li a{
+  text-decoration: none;
+  color:white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+  display:flex;
+  flex-direction:column;
+  /* justify-content: center; */
+  position:fixed;
+  height:100%;
+  width:250px;
+  background-color:#4b86cb;
+  margin-top:-20px ;
+}
+
+.members {
+  width: 80%;
   height: 250px;
   padding: 30px;
   padding-top: 30px;
+  margin-left: 200px;
 }
 
 h1 {
   text-align: center;
   color: #4b86cb;
-  font-family: Tahoma;
+  font-family: Impact;
   font-size: 20px;
+  border-bottom:1px solid white;
+  font-size: 25px;
 }
 
 .color-row {
@@ -30,22 +69,23 @@ table {
   
 }
 
-.additional_container label {
-  display: block;
-}
+/* .additional_container label {
+  
+} */
 
 
 input[type='text' i] {
   padding: 1px 2px;
+  
 }
 
 .additional_container {
   display:flex;
-  justify-content: space-around;
-  /* border: 3px solid transparent; */
+  justify-content: center;
+  border: 3px solid transparent;
   flex-wrap: wrap;
-  margin: 30px;
+  margin-left: 50px;
   padding: 30px;
   width: 75%;
-  padding-top: 10px;
+  padding-top: 10px; 
 }
