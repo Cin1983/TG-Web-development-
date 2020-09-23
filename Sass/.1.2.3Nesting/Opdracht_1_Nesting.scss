@@ -29,4 +29,9 @@ h1 {
 .container {
   text-align: center;
   font-family: 'Pacifico', cursive;
+  .icon{
+    display: inline-block;
+    margin:2%;
+    border:4px solid black;
+  }
 }
