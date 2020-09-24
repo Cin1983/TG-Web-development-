@@ -1,0 +1,189 @@
+body {
+  font-family: Lobster, cursive;
+  color: black;
+  margin: 0;
+}
+
+h4,
+p {
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+span {
+  float: right;
+}
+
+nav {
+  position:fixed;
+  width:100%;
+  text-align: right;
+  font-size: 20px; 
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+span {
+  text-align: right;
+  display: inline;
+}
+
+.cooking_container {
+  position: absolute;
+  left: 42%;
+  width: 15%;
+  height: 100px;
+  padding-right: 130px;
+  padding-top: 45px;
+  margin-left: 350px;
+  margin-top: 60px;
+}
+
+.cooking_container > h1 {
+  text-align: left;
+  margin-bottom: -1px;
+}
+
+.dish > h1 {
+  text-align: center;
+}
+
+.cooking {
+  position: relative;
+  background-image: url(https://i.ibb.co/f9zmSmB/cooking.jpg);
+  background-color: grey;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.cooking {
+  color: rgb(97, 135, 216);
+  display: inline-block;
+}
+
+.button_green {
+  display: inline-flex;
+  transition-duration: 0.4s ease-in, 250ms ease-out 1s;
+  width: 26%;
+  height: 35px;
+  font-size: 15px;
+  color: black;
+  font-family: Impact;
+  background-color: transparent;
+  border: 3px solid #4caf50;
+  position: absolute;
+  right: 175px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.button_pink {
+  display: inline-flex;
+  transition-duration: 0.4s ease-in, 250ms ease-out 1s;
+  width: 26%;
+  height: 35px;
+  font-size: 15px;
+  color: black;
+  font-family: Impact;
+  background-color: transparent;
+  border: 3px solid rgb(255, 0, 76);
+  position: absolute;
+  right: 282px;
+  padding: 5px;
+  padding-right: 30px;
+  padding-left: 35px;
+}
+
+.button_green:hover,
+.button_pink:hover {
+  background-color: rgb(55, 0, 255);
+}
+
+.dish {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dish,
+h1 {
+  width: 100%;
+  padding: left 100px;
+  text-align: center;
+}
+
+.pasta_dish {
+  width: 24%;
+  height: 300px;
+}
+
+.menu_colomn {
+  background-color: grey;
+  margin-top: 300px;
+  width: 25%;
+  height: 300px;
+  flex-wrap: wrap;
+}
+
+.container_menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  margin-right: 47px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+
+.pasta_dish > img {
+  width: 50%;
+  height: 50%;
+}
+
+.menu_item {
+  margin-bottom: 3em;
+}
+
+.bakker {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.footer_box {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(128, 179, 128);
+  height: 225px;
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  text-decoration: none;
+}
+.location-west {
+  margin-left:37em;
+  margin-top:1em;
+  width: 40%;
+  height: 150px;
+  font-size: 12px;
+  font-family: Lobster, cursive;
+  color: rgb(97, 135, 216);
+}
+
+.navigate {
+  margin-right:12em;
+  margin-top: 1em;
+  width: 30%;
+  height: 150px;
+  font-size: 12px;
+  font-family: Lobster, cursive;
+  color: rgb(97, 135, 216);
+}
