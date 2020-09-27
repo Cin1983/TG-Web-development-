@@ -1,189 +1,316 @@
-body {
-  font-family: Lobster, cursive;
-  color: black;
+html, body{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Lobster', cursive;
+  scroll-behavior: smooth;
+
+
+}
+
+
+/* ---------------------Navigation--------------------- */
+
+nav { 
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  background: rgba(194, 177, 82, 0.5);
+  min-height: 60px;
+  max-height: 3vw;
   margin: 0;
 }
 
-h4,
-p {
-  text-align: left;
-  margin-block-start: 0;
-  margin-block-end: 0;
+nav ul li {
+  padding: 1em;
+  list-style: none;
+  
 }
 
-span {
-  float: right;
-}
-
-nav {
-  position:fixed;
-  width:100%;
-  text-align: right;
-  font-size: 20px; 
-  z-index: 1;
-}
-
-a {
+nav ul li a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 
-span {
-  text-align: right;
-  display: inline;
+nav ul li:hover {
+  background:rgba(194, 177, 82, 0.5);
+  filter: contrast(120%);
+  
 }
 
-.cooking_container {
-  position: absolute;
-  left: 42%;
-  width: 15%;
-  height: 100px;
-  padding-right: 130px;
-  padding-top: 45px;
-  margin-left: 350px;
-  margin-top: 60px;
+
+
+
+
+/* ---------------------Header--------------------- */
+
+
+
+header { 
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  background-image: url(./img/cooking.jpg);
+  background-size:cover;
+  min-height: 50vh;
+  color: cornflowerblue;
 }
 
-.cooking_container > h1 {
-  text-align: left;
-  margin-bottom: -1px;
+.banner-container{margin:5% 7vw;}
+
+.banner-container h1{font-size: 5vw;}
+.banner-container p {font-size: 2vw;}
+.banner-container button {
+
+  font-size: 2em;
+  padding: 0.5em;
+  width: 90%;
+  min-width: 3em;
+  max-width: 7em;
+  background:none;
+  color: cornflowerblue;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  margin:10px;
+  border: 2px solid rgb(128, 179, 128) ;
 }
 
-.dish > h1 {
-  text-align: center;
+.banner-container button:hover {
+background: cornflowerblue;
+/* opacity: 0.5; */
+color: white;
+transition: 1s;
+
 }
 
-.cooking {
-  position: relative;
-  background-image: url(https://i.ibb.co/f9zmSmB/cooking.jpg);
-  background-color: grey;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-}
 
-.cooking {
-  color: rgb(97, 135, 216);
-  display: inline-block;
-}
 
-.button_green {
-  display: inline-flex;
-  transition-duration: 0.4s ease-in, 250ms ease-out 1s;
-  width: 26%;
-  height: 35px;
-  font-size: 15px;
-  color: black;
-  font-family: Impact;
-  background-color: transparent;
-  border: 3px solid #4caf50;
-  position: absolute;
-  right: 175px;
-  padding: 5px;
-  padding-left: 10px;
-}
+/* ---------------------Main--------------------- */
 
-.button_pink {
-  display: inline-flex;
-  transition-duration: 0.4s ease-in, 250ms ease-out 1s;
-  width: 26%;
-  height: 35px;
-  font-size: 15px;
-  color: black;
-  font-family: Impact;
-  background-color: transparent;
-  border: 3px solid rgb(255, 0, 76);
-  position: absolute;
-  right: 282px;
-  padding: 5px;
-  padding-right: 30px;
-  padding-left: 35px;
-}
 
-.button_green:hover,
-.button_pink:hover {
-  background-color: rgb(55, 0, 255);
+/* ------Populaire gerechten-------- */
+
+.dishes-container, .menus{
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: flex-start; */
+  flex-wrap: wrap;
 }
 
 .dish {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin: 1em;
+  min-width: 300px;
+  max-width: 20vw;
 }
 
-.dish,
-h1 {
+.dish img {
+  min-width: 300px;
+  max-width: 20vw;
+  border-radius: 50%;
+}
+
+.item-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.item-header p{
+  padding-top: 5px;
+}
+
+.dish .show{text-align: right;}
+
+#populaire-gerechten h1{
+  text-align: center;
+  font-size: 3em;
+}
+
+
+/* ------Menus-------- */
+
+#menus h1{
+  font-size: 3em;
   width: 100%;
-  padding: left 100px;
   text-align: center;
 }
-
-.pasta_dish {
-  width: 24%;
-  height: 300px;
-}
-
-.menu_colomn {
-  background-color: grey;
-  margin-top: 300px;
-  width: 25%;
-  height: 300px;
-  flex-wrap: wrap;
-}
-
-.container_menu {
+.menus-container { 
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 30px;
-  margin-right: 47px;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  justify-content: space-around;
+  max-width: 100%;
 }
 
-.pasta_dish > img {
-  width: 50%;
-  height: 50%;
+.menus{
+  margin-left: 3%;
 }
 
-.menu_item {
-  margin-bottom: 3em;
+.menu{
+  margin: 0.5em;
+  min-width: 300px;
+  max-width: 15vw;
+  margin-bottom: 20px ;
 }
 
-.bakker {
-  margin-top: 30px;
-  margin-left: 50px;
+.menus:nth-last-child(1) {
+  justify-content: flex-start;
 }
 
-.footer_box {
+.chef {
+  align-self: flex-end;
+  margin-bottom: -5px;
+  margin-left: 5vw;
+  
+}
+.chef img{
+   min-height: 250px;
+  height: 20vw;
+}
+
+
+
+
+
+/* ---------------------Footer--------------------- */
+
+
+footer{
   display: flex;
   justify-content: space-evenly;
-  background-color: rgb(128, 179, 128);
-  height: 225px;
-  width: 100%;
+  align-items: center;
+  background:rgb(128, 179, 128);
+  height: 350px;
+  color: white;
+  margin-bottom: 0;
 }
 
-ul li {
+/* .contact, .navigation{
+  /* width: 25%;
+  margin: 30px; */
+/* } */ 
+
+
+.navigation ul li{
+  padding: 0;
+  margin-left: -30px;
   list-style-type: none;
-  text-decoration: none;
-}
-.location-west {
-  margin-left:37em;
-  margin-top:1em;
-  width: 40%;
-  height: 150px;
-  font-size: 12px;
-  font-family: Lobster, cursive;
-  color: rgb(97, 135, 216);
 }
 
-.navigate {
-  margin-right:12em;
-  margin-top: 1em;
-  width: 30%;
-  height: 150px;
-  font-size: 12px;
-  font-family: Lobster, cursive;
-  color: rgb(97, 135, 216);
+
+.navigation ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+
+}
+
+.socialmedia .fab{
+  color: white;
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+
+
+
+
+
+
+
+/* ---------------------Media Queries--------------------- */
+
+@media (max-width:576px){
+
+  /* -----Navigation---- */
+
+   nav ul{justify-content: center;}
+
+  /* ------Header------ */
+  .banner-container{
+      text-align: center;
+  }
+
+  .banner-container h1{font-size: 4em;}
+  .banner-container p{font-size: 2em;}
+  .banner-container button {
+      font-size:1.5em;
+      
+  }
+
+  /* ------Main------ */    
+
+  .menus-container{
+      margin-left: 15%;
+  }
+
+  .chef {
+      position: absolute;
+      z-index: -1;
+      margin-left:25%;
+  }
+   .chef img{
+      height: 250px;
+   }
+  
+
+}
+
+
+
+@media (min-width:576px) and (max-width:768px){
+
+  /* -----Navigation---- */
+  nav ul{justify-content: center;}
+
+  /* ------Header------ */
+  .banner-container{
+      text-align: center;
+  }
+  .banner-container h1{font-size: 4em;}
+  .banner-container p{font-size: 2em;}
+  .banner-container button {font-size:1.5em;}
+
+  /* ------Main------ */ 
+
+  .menus-container{
+      margin-left: 15%;
+  }
+
+  .chef {
+      position: absolute;
+      z-index: -1;
+      margin-left:25%;
+  }
+   .chef img{
+      height: 250px;
+   }
+
+}
+
+
+@media (min-width:768px) and (max-width:992px){
+
+      /* -----Navigation---- */
+      nav ul{justify-content: center;}
+
+      /* ------Header------ */
+      .banner-container h1{font-size: 4em;}
+      .banner-container p{font-size: 2em;}
+      .banner-container button {font-size:1.5em;}
+
+      /* ------Main------ */ 
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+       /* -----Navigation---- */
+
+       /* ------Header------ */
+
+       /* ------Main------ */ 
+
 }
