@@ -1,0 +1,56 @@
+.button {
+  width: 300px;
+  height: 150px;
+  background-color: purple;
+  color: black;
+  font-size: 30px;
+  font-family: impact;
+}
+
+.button:hover {
+  background-color: #0dff0d;
+}
+
+.button {
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  background-color: #fd2856;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+.button:hover {
+  background-color: purple;
+}
+
+.button {
+  width: 300px;
+  height: 150px;
+  background-color: purple;
+  color: black;
+  font-size: 30px;
+  font-family: impact;
+}
+
+.button:hover {
+  background-color: #0dff0d;
+}
+
+.colorChangingSquare {
+  margin-top: 40px;
+  width: 200px;
+  height: 200px;
+  background-color: #fd2856;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+.colorChangingSquare:hover {
+  background-color: purple;
+}
+/*# sourceMappingURL=Opdracht_1.css.map */
