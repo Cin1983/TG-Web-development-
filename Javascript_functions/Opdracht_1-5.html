@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+   <title>Functions</title>
+</head>
+
+<body>
+   <p id="answer"></p>
+   <button onclick="answer()">click</button>
+   <script>
+
+      function answer(text) {
+         let intro = "Hello World";
+      }
+      console.log(text);
+      answer('text');
+      const imPortantGuest = ['John', 'Oly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
+
+// console.log(imPortantGuest.length);
+
+
+console.log (Math.random(imPortantGuest[3]));
+   </script>
+</body>
+
+</html>
+
+<!-- Opdracht 1:
+Schrijf een functie die de tekst “hello world” in de console uitprint. Geef een goede functie
+naam ervoor.
+function welKomScript(intro){
+    console.log(intro);
+}
+ 
+welKomScript("Hello world!");
+
+
+function welKomScript(){
+   console.log("Hello World!");
+}
+
+welKomScript()
+
+Opdracht 2:
+Schrijf een functie waarbij je een tekst mee kan geven aan de functie. Print vervolgens de
+tekst uit in de console.
+
+function textQuestion(introduction, text, techgrounds){
+    console.log(`${introduction}, ${text},${techgrounds}`);
+}
+ 
+textQuestion("This is a very exciting course, for people who want to learn tech, My greatest wish is that I will become the greatest Web Developer that there is");
+
+Opdracht 3:
+Schrijf een functie waarbij je een getal mee kan geven aan de functie. Print vervolgens het
+getal uit in de console.
+ 
+function answer(number) {
+    console.log(number);
+ }
+
+ answer(42);
+Opdracht 4:
+Schrijf een functie die twee getallen met elkaar vermenigvuldigt en geef de waarde van de
+vermenigvuldiging terug. Geef een goede functie naam ervoor.
+
+function splitBill (amount,people){
+    return `Please pay ${amount / people} EUR, thank you!`
+}
+
+console.log(splitBill(600,5));
+
+Opdracht 5: even on hold
+Schrijf een functie waarbij je een naam kan meegeven aan de functie. De functie moet
+vervolgens controleren of de naam een bekende is.
+De namen die bekend zijn:
+● John
+● Olly
+● Mo 
+● Hendrik
+● Toni
+Als het een bekende is, dan toon je het volgende tekst op het scherm: “Dit is een bekende
+van ons: <naam die je aan de functie hebt meegegeven>”.
+Als het niet een bekende is, dan toon je het volgende tekst op het scherm “Onbekend in ons
+systeem!”
+We gaan de applicatie uitbreiden! Je hebt een functie geschreven waarbij je zelf een naam
+meegeeft aan de functie. Nu willen we dat de naam random gekozen wordt. We gaan
+gebruik maken van Math.random() en Math.round() functie. Lees je goed in wat beide
+functies doet.
+Schrijf nu een functie die een random naam teruggeeft. Math.random() geeft een getal terug.
+Zorg ervoor dat getal en naam samenhang hebben. Bijvoorbeeld getal 1 geeft aan dat het
+“John” is. Hieronder zie je de getallen en de namen die samenhang met elkaar hebben.
+● 1 = John
+● 2 = Oly
+● 3 = Mo
+● 4 = Hendrik
+● 5 = Tony
+● 6 = Irus
+● 7 = Jan
+● 8 = Peter
+Maak een functie die een random naam teruggeeft. Deze naam geef je vervolgens door aan
+de functie die je voorheen hebt geschreven om te controleren of de naam een bekende is
+van ons.
+
+const imPortantGuest=[]
+
+imPortatGuest.push(John);
+imPortatGuest.push(Oly);
+imPortatGuest.push(Mo);
+imPortatGuest.push(Hendrik);
+imPortatGuest.push(Tony);
+imPortatGuest.push(Irus);
+imPortatGuest.push(Jan);
+imPortatGuest.push(Peter);
+
+
+console.log(imPortantGuest);
+
+
+const imPortantGuest=[John, Oly, Mo, Hendrik, Tony, Irus, Jan, Peter]
+
+imPortantGuest.lenght
+
+
+const imPortantGuest = ['John', 'Oly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
+
+// console.log(imPortantGuest.length);
+console.log(imPortantGuest[0])
+
+let raNdomName = Math.floor(Math.random() * imPortantGuest.length);
+
+
+console.log(raNdomName);
+
+let naMeOutput = imPortantGuest[raNdomName];
+
+console.log(naMeOutput);
+
+Opdracht 6
+
+const imPortantGuest = ['John', 'Oly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
+
+let generateName = () =>{
+    let schUffle = Math.floor(Math.random()* imPortantGuest.lenght);
+}
+console.log(generateName());
+
+-->

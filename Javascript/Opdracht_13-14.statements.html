@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Opdracht_13-14.statements.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Translate months</h1>
+    <input type="number" name="number" id="number">
+    <button onclick="translateMonth()">translate</button>
+    <div id="translatedMonth"></div>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+        // Opdracht 13
+        // function translateMonth() {
+        //     month = document.getElementById("number").value;
+
+        //     // if (month == 1) {
+        //     text = "januari";
+        // } else if (month == 2) {
+        //     text = "februari";
+        // } else if (month == 3) {
+        //     text = "maart";
+        // } else if (month == 4) {
+        //     text = "april";
+        // } else if (month == 5) {
+        //     text = "mei";
+        // } else if (month == 6) {
+        //     text = "juni";
+        // } else if (month == 7) {
+        //     text = "juli";
+        // } else if (month == 8) {
+        //     text = "augustus";
+        // } else if (month == 9) {
+        //     text = "september";
+        // } else if (month == 10) {
+        //     text = "oktober";
+        // } else if (month == 11) {
+        //     text = "november";
+        // } else if (month == 12)  {
+        //     text = "december";
+        // } else {
+        //     text = "unknown"
+        // }
+
+        //     document.getElementById("label").innerHTML = text;
+        // }
+
+        // Opdracht 14
+         let month =  document.getElementById("number").value;
+         
+        switch (new Date().getDay()) {
+            case "1":
+                month = "januari";
+                break;
+            case "2":
+                month = "februari";
+                break;
+            case "3":
+                month = "maart";
+                break;
+            case "4":
+                month = "april";
+                break;
+            case "5":
+                month = "mei";
+                break;
+            case "6":
+                month = "juni";
+                break;
+            case "7":
+                month = "juli";
+                break;
+            case "8":
+                month = "augustus";
+                break;
+            case "9":
+                month = "september";
+                break;
+            case "10":
+                month = "oktober";
+                break;
+            case "11":
+                month = "november";
+                break;
+            default: "12"
+                text = "december";
+                
+
+                document.getElementById("label").innerHTML = "It is " + month;
+        }
+    </script>
+</body>
+
+</html>
