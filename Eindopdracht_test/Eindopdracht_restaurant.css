@@ -1,0 +1,135 @@
+body,
+html {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    color: black;
+}
+
+.navigation_bar,
+a {
+    position: sticky;
+    width: 100%;
+    font-size: 1.2em;
+    color: rgb(255, 0, 119);
+    text-align: right;
+    text-decoration: none;
+    top: 0;
+    z-index: 1;
+
+}
+
+a:hover {
+    color: rgb(55, 0, 255);
+
+}
+
+.banner_box>h1 {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: -25%;
+    padding-left: 6.8em;
+}
+
+.banner_box>p {
+position: absolute;
+    top: 5em;
+    right: 17.2em;
+    width: 20%;
+    height: 20%;
+
+}
+
+.banner_box {
+    margin-top: 0;
+    background-image: url(./img/cooking.jpg);
+    background-size: cover;
+    min-height: 50vh;
+    color: rgb(97, 135, 216);
+    font-size: 1.2em;
+
+}
+
+.image {
+    width: 100%;
+    height: 60%;
+
+}
+
+.button_green {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    top: 35%;
+    right: 16.8em;
+    font-size: 1em;
+    color: black;
+    font-family: Impact;
+    background-color: transparent;
+    border: 0.2em solid #4CAF50;
+
+}
+
+.button_pink {
+    position: absolute;
+    width: 10%;
+    height: 5%;
+    top: 35%;
+    right: 24em;
+    font-size: 1em;
+    color: black;
+    font-family: Impact;
+    background-color: transparent;
+    border: 0.2em solid rgb(255, 0, 76);
+}
+
+.button_green:hover,
+.button_pink:hover {
+    background-color: rgb(55, 0, 255);
+}
+
+.populair_dish_container {
+
+    flex-wrap: wrap;
+
+}
+
+.populair_dish_container>h1 {
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.populair_dish_container>p {
+    width: 20%;
+    height: 20%
+}
+
+.circle_image {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    height: 15%;
+    margin-left: 0;
+}
+
+
+
+.header_item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.chef {}
+
+.second_menu_column1 {}
+
+.second_menu_column2 {}
+
+.second_menu_column3 {}
+
+.footer_box {}
+
+.location-west {}
+
+.navigate {}

@@ -1,0 +1,28 @@
+body {
+    background-color: orange;
+}
+
+
+h1 {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+button {
+
+    width: 175px;
+    height: 75px;
+    background-color: indigo;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+/* input[type='text'] {
+    background-color: #c5deea;
+    border-radius: 3px;
+    border: transparent;
+    margin-bottom: 0.5em;
+    margin-right: 0.4em;
+
+} */
