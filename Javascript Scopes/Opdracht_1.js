@@ -37,4 +37,24 @@ function printCar() {
     var carBrand = "Volvo";
      console.log(carBrand);
     }
-    printCar()
+    printCar() 
+
+
+    // Opdracht 4
+// Kijkend naar de volgende code:
+ function printCar() {
+ carBrand = "Volvo";
+ return function(type) {
+ console.log(carBrand + " " + type);
+ }
+ }
+ const car = printCar();
+ car("v40");
+// Wat wordt er in de console gelogt? Hoe is dit anders voorgaande opdrachten? Lees
+// je meer over closures:
+// ReferenceError: carBrand is not defined
+// With let, var or const before carBrand it would print out:
+// Volvo v40
+
+// The difference from all the other codes is that one function is closed by the other. With closures it is possible
+// to lock the value of a function. The first function is locked in the return function. 
