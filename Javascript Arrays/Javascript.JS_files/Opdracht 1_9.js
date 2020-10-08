@@ -23,7 +23,7 @@
 // console.log(fruit[1]);
 
 
-// Opdracht 5 ik begrijp het niet helemaal
+// Opdracht 5
 
 function generateNumber(){
 
@@ -36,16 +36,87 @@ function generateNumber(){
     console.log(nuMber[shuffle]);
 
 
+    // generateNumber()
+    let numberArray = [ 12, 4, 8, 16, 100 , 256, 48, 20,-16, 0 ];
+
+    let remainderNumberArray = numberArray[4] % numberArray[0];
 
 
 
+    let fruits = [
+    'banana', 'pineapple','raspberry','apple', 'apricot'];
+
+
+    let shuffle = Math.floor(Math.random() * remainderNumberArray);
+    let getRandomFruitNow = fruits[shuffle];
+    console.log(getRandomFruitNow);
 
 
 
+// Opdracht 6
+
+// Zoek uit wat push(), pop(), shift(), slice(), splice(),
+// // sort(). Maak gebruik van de fruits array en maak voor elke functie een voorbeeld en geef in
+// // commentaar wat het doet.
 
 
+// Voorbeeld.push:
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+fruit.push('druiven');
+
+console.log(fruit);
+
+antwoord: 
+// You can use .push to expand your Array. I have pushed grapes into the Array.
+["banana", "aardbei", "citrus", "blueberry", "apple", "druiven"]
+
+// Voorbeeld.pop:
+
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+fruit.pop();
+
+console.log(fruit);
+
+antwoord:
+// You can use .pop to remove items from your Array. I have remove apple from the array.
+["banana", "aardbei", "citrus", "blueberry"]
 
 
+// Voorbeeld.shift:
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+fruit.shift();
+
+console.log(fruit);
+
+// antwoord:
+// with.shift you can romove te first word from the Array.
+["aardbei", "citrus", "blueberry", "apple"]
+
+
+// Voorbeeld.slice: 
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+const fruit_b = fruit.slice(2,5);
+
+console.log(fruit_b);
+
+// antwoord: 
+// With slice you can print out a proportion of an Array in a second array it doesn't modify the array;.
+// ["citrus", "blueberry", "apple"]
+
+// Voorbeeld.splice:const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+const fruit_b = fruit.splice(2);
+
+console.log(fruit_b);
+
+
+// antwoord:
+// With .splice your able to modify and delete elements out of an array. Note that when elements are removed it will be modified(less numbers)
+// ["citrus", "blueberry", "apple"]
 
 
 
@@ -73,9 +144,9 @@ function generateNumber(){
 // worden.
 // Opdracht 6:
 // Je hebt nu geleerd hoe je arrays kunt aanmaken en de waarde kunt benaderen. Arrays
-// hebben ook functies die je kunt gebruiken. Zoek uit wat push(), pop(), shift(), slice(), splice(),
-// sort(). Maak gebruik van de fruits array en maak voor elke functie een voorbeeld en geef in
-// commentaar wat het doet.
+// hebben ook functies die je kunt gebruiken. 
+
+
 // Opdracht 7:
 // Naast de functies die je van de array kunt gebruiken heb je ook nog de “length” property die
 // je kunt gebruiken. Hiermee kan je de grootte van de array opvragen. Gebruik de length

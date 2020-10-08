@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <input type="number5" name="number5" id="number5">
-    <button id="btn5" onclick="checkNumber5()">Button</button>
+    <input type="number6" name="number6" id="number6">
+    <button id="btn6" onclick="checkNumber6()">Button</button>
     <div>
-        <span id="label5"></span>
+        <span id="label6"></span>
     </div>
     <script>
 
@@ -35,23 +35,23 @@
 
 
 
-        // Opdracht 10
-        function checkNumber5() {
-            let value = number
-            value = document.getElementById("number5").value;
+        // // Opdracht 10
+        // function checkNumber5() {
+        //     let value = number
+        //     value = document.getElementById("number5").value;
 
-            if (value >= 13 && value <= 20) {
+        //     if (value >= 13 && value <= 20) {
 
-                text =
-                    "gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20."
+        //         text =
+        //             "gelijk aan 11 of groter dan 11 en is gelijk aan 20 of kleiner dan 20."
 
-            } else {
+        //     } else {
 
-                text = "I don't quite understand what is happening"
+        //         text = "I don't quite understand what is happening"
 
-            }
-            document.getElementById("label5").innerHTML = text;
-        }
+        //     }
+        //     document.getElementById("label5").innerHTML = text;
+        // }
 
 
         // // Opdracht 11
@@ -72,23 +72,21 @@
         //     document.getElementById("label").innerHTML = text;
         // }
 
-        // // Opdracht 12 mijn else werkt niet wat doe ik verkeerd?
-        // function checkNumber6() {
-        //     let value = number
-        //     value = document.getElementById("number").value;
+        // Opdracht 12 PAS DE ID NUMBER AAN CHECK ZE ALLEMAAL.
+        function checkNumber6() {
+            let value = document.getElementById("number6").value;
 
-        //     if (value > 30 && value < 35 || value > 40 < 45) {
+            if (value > 30 && value < 35 || value > 40 < 45) {
 
-        //         text =
-        //             "The number is between 30 and 35 or between 40 and 45";
+                text = "The number is between 30 and 35 or between 40 and 45";
 
-        //     } else { (value < 45)
+            } else { (value < 45)
 
-        //         text = "I don't quite understand what is happening"
+                text = "I don't quite understand what is happening"
 
-        //     }
-        //     document.getElementById("label").innerHTML = text;
-        // }
+            }
+            document.getElementById("label6").innerHTML = text;
+        }
     </script>
 </body>
 
