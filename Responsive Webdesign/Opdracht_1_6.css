@@ -8,7 +8,7 @@ body {
   color: GhostWhite;
 }
 body {
-  background-image: url("../CSS/Media_Queries/space.jpg");
+  background-image: url("./Images/space.jpg");
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -25,7 +25,7 @@ body {
 .logo {
   height: 80px;
   width: 80px;
-  background-image: url("../CSS/Media_Queries/spaceship.png");
+  background-image: url("./Images/spaceship.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -113,4 +113,4 @@ nav a {
 
  @media(min-width: 768px) and (max-width:1024px)and (orientation:landscape)
 
-
+{}

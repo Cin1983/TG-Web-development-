@@ -1,26 +1,40 @@
-// Opdracht 1. 
+// // Opdracht 1. 
 
-const randomNumber = [ 1, 2, 3, 4, 5];
+// const randomNumber = [ 1, 2, 3, 4, 5];
 
-console.log(randomNumber);
+// console.log(randomNumber);
 
-// Opdracht 2.
-const fruit= ['banana', 'orange', 'citrus','blueberry', 'pineapple']
+// // Opdracht 2.
+// const fruit= ['banana', 'orange', 'citrus','blueberry', 'pineapple']
 
-console.log(fruit);
+// console.log(fruit);
 
-// Opdracht 3.
+// // Opdracht 3.
 
-const fruit= ['banana', 'orange', 'citrus', 'blueberry', 'apple']
-
-
-console.log(fruit[4]);
-
-// Opdracht 4
-const fruit= ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+// const fruit= ['banana', 'orange', 'citrus', 'blueberry', 'apple']
 
 
-console.log(fruit[1]);
+// console.log(fruit[4]);
+
+// // Opdracht 4
+// const fruit= ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+
+// console.log(fruit[1]);
+
+
+// Opdracht 5 ik begrijp het niet helemaal
+
+function generateNumber(){
+
+    const nuMber = [1, 2, 3, 4, 5];
+    
+    const shuffle = (Math.floor(Math.random() * nuMber.length));
+    }
+
+    generateNumber()
+    console.log(nuMber[shuffle]);
+
 
 
 
