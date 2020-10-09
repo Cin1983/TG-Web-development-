@@ -107,18 +107,71 @@ console.log(fruit_b);
 // With slice you can print out a proportion of an Array in a second array it doesn't modify the array;.
 // ["citrus", "blueberry", "apple"]
 
-// Voorbeeld.splice:const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+// Voorbeeld.splice:
+
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
 
 const fruit_b = fruit.splice(2);
 
 console.log(fruit_b);
+
+// antwoord 2:
+
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+
+fruit.splice(1,0, 'GROENE BEER');
+
+console.log(fruit);
+
 
 
 // antwoord:
 // With .splice your able to modify and delete elements out of an array. Note that when elements are removed it will be modified(less numbers)
 // ["citrus", "blueberry", "apple"]
 
+// Voorbeeld.sort:
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
 
+const fruit_b = fruit.sort();
+
+console.log(fruit_b);
+
+antwoord:
+["aardbei", "apple", "banana", "blueberry", "citrus"]
+
+
+// Opdracht 7
+// Voorbeeld .length
+const fruit = ['banana', 'aardbei', 'citrus', 'blueberry', 'apple']
+console.log(fruit.length);
+
+antwoord:
+5
+
+// Opdracht 8
+const fruit = ['banana', 'aardbei', 'citrus', 'peer', 'apple']
+
+fruit[3]= 'orange'
+
+console.log(fruit);
+
+antwoord:
+
+["banana", "aardbei", "citrus", "orange", "apple"]
+
+
+// Opdracht 9
+
+const fruit = ['banana', 'aardbei', 'manderijn', 'peer', 'apple']
+
+fruit[1]= 'manderijn'
+fruit[2]= 'aardbei'
+
+console.log(fruit);
+
+// antwoord:
+
+["banana", "manderijn", "aardbei", "peer", "apple"]
 
 // “Opdracht 1 t/m 9 horen bij elkaar. Maak deze opdrachten ook in 1 js bestand.”
 // Opdracht 1:
@@ -142,6 +195,7 @@ console.log(fruit_b);
 // gebruiken. Hiervoor kun je de modulo (%) gebruiken. Zoek uit hoe modulo werkt en pas dat
 // toe aan de waarde van de eerste array. Als resultaat zal er altijd een fruitsoort uitgeprint
 // worden.
+
 // Opdracht 6:
 // Je hebt nu geleerd hoe je arrays kunt aanmaken en de waarde kunt benaderen. Arrays
 // hebben ook functies die je kunt gebruiken. 
@@ -151,6 +205,7 @@ console.log(fruit_b);
 // Naast de functies die je van de array kunt gebruiken heb je ook nog de “length” property die
 // je kunt gebruiken. Hiermee kan je de grootte van de array opvragen. Gebruik de length
 // property en print in de console uit hoe groot de fruits array is.
+
 // Opdracht 8:
 // De bestaande values van de array kan je ook aanpassen. Zoek uit hoe je op een specifieke
 // index de waarde kan aanpassen. Pas de value “Peer” naar “Sinaasappel”.
