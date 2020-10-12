@@ -9,21 +9,22 @@ initial-scale=1.0">
 </head>
 
 <body>
-   <p id="answer"></p>
-   <button onclick="answer()">click</button>
+   <p id="answer">Test</p>
+   <button onclick="answer('click')">click</button>
    <script>
 
       function answer(text) {
-         let intro = "Hello World";
-      }
-      console.log(text);
-      answer('text');
+         for (i = 0
+         // vergelijk text met importantguest
       const imPortantGuest = ['John', 'Oly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
 
-// console.log(imPortantGuest.length);
+         // console.log(imPortantGuest.length);
 
 
-console.log (Math.random(imPortantGuest[3]));
+         console.log(Math.random(imPortantGuest[3]));
+
+
+
    </script>
 </body>
 
@@ -117,37 +118,29 @@ imPortatGuest.push(Irus);
 imPortatGuest.push(Jan);
 imPortatGuest.push(Peter);
 
-
-console.log(imPortantGuest);
-
-
-const imPortantGuest=[John, Oly, Mo, Hendrik, Tony, Irus, Jan, Peter]
-
-imPortantGuest.lenght
-
-
 const imPortantGuest = ['John', 'Oly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
 
-// console.log(imPortantGuest.length);
-console.log(imPortantGuest[0])
+  const generateName = () =>{
+    let schUffle = Math.floor(Math.random() * imPortantGuest.length);
+   console.log(imPortantGuest[schUffle]);
+   let randomnaam = imPortantGuest[schUffle];
+   
+}
+generateName()
 
-let raNdomName = Math.floor(Math.random() * imPortantGuest.length);
 
-
-console.log(raNdomName);
-
-let naMeOutput = imPortantGuest[raNdomName];
-
-console.log(naMeOutput);
 
 Opdracht 6
 
 const imPortantGuest = ['John', 'Oly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
 
-let generateName = () =>{
-    let schUffle = Math.floor(Math.random()* imPortantGuest.lenght);
+  const generateName = () =>{
+    let schUffle = Math.floor(Math.random() * imPortantGuest.length);
+   console.log(imPortantGuest[schUffle]);
+   let randomnaam = imPortantGuest[schUffle];
+   
 }
-console.log(generateName());
+generateName()
 
 Opdracht 7:
 Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld.
