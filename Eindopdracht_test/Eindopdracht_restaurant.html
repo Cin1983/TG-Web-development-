@@ -7,231 +7,310 @@
     <link rel="stylesheet" href="./Style/Eindopdracht_restaurant.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Style/Eindopdracht_restaurant-mediaq.css">
 
     <title>Cooking with TechGrounds</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navigation_bar">
+    <!-- navigation -->
+    <div class="navigation-bar">
+        <a href="#top">Home </a>
+        <a href="#menu">Menu </a>
+        <a href="#contact">Contact</a>
+    </div>
+    <!-- navigatie-wrapper -->
+    <div class="navbar-wrapper">
+        <!-- Let op! image heeft class -->
+        <img src="./Images/cooking.jpg" alt="banner" class="image">
 
-            <a href="#top">Home </a>
-            <a href="#menu">Menu </a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-        <div class="banner_box">
-            <img src="./Images/cooking.jpg" alt="banner" class="image">
-            <section></section>
+        <div class="navbar-text">
             <h1>Cooking</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae provident vel ipsum, sint culpa
+        </div>
+
+        <div class="navbar-ptext">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repudiandae provident vel ipsum, sint culpa
                 fugit.</p>
+        </div>
+        <div>
             <button class="button_green">SHOW MORE</button>
             <button class="button_pink">BUY</button>
-            </section>
         </div>
-    </header>
-    <main>
-        <section>
-            <div class="populair_dish_container">
-                <h1> Populaire Gerechten</h1>
-                <div><img src="./Images/circle-cropped (1).png" class="circle_image"></div>
-                <div class="header_item">
-                    <h3>Pasta</h3>
-                    <p>€8.99</p>
-                </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book.</p>
-                <p class="show">show...</p>
+    </div>
 
-                <div><img src="./Images/circle-cropped (1).png" class="circle_image"></div>
-                <div class="header_item">
-                    <h3>Pasta</h3>
-                    <p>€8.99</p>
-                </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book.</p>
-                <p class="show">show...</p>
+    <!-- Menubar with image -->
 
-               <div> <img src="./Images/circle-cropped (1).png" class="circle_image"></div>
-                <div class="header_item">
-                    <h3>Pasta</h3>
-                    <p>€8.99</p>
-                </div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book.</p>
-                <p class="show">show...</p>
+
+    <div class="menu-with-image-h1">
+        <h1> Populaire Gerechten</h1>
+    </div>
+
+    <!-- <div class="menu-with-image"> -->
+
+    <div class="menu-with-image">
+        <div>
+            <div class="circle_image">
+                <img src="./circle-klein.png">
             </div>
+
+            <div class="header_item">
+                <h3>Pasta</h3>
+                <p>€8.99</p>
             </div>
-        </section>
 
-        
-
-        <section>
-            <div class="second_menu_column1">
-
-                <h1>Menu</h1>
-                <div class="chef"><img src="./Images/chef1 (1).webp" alt="chef"></div>
-                <div class="header_item">
-                    <h3>Pasta</h3>
-                    <p>€8.99</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                    vel aspernatur ipsam itaque error fugiat repellat
-                    dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
+            <div class="menu-image-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.
                 </p>
 
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
+            </div>
+
+        </div>
+        <div class="show-link">
+            <p>show...</p>
+        </div>
+
+
+
+
+        <div>
+            <div class="circle_image">
+                <img src="./circle-klein.png">
+            </div>
+
+            <div class="header_item">
+                <h3>Pasta</h3>
+                <p>€8.99</p>
+            </div>
+
+            <div class="menu-image-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.
+                </p>
+
+            </div>
+        </div>
+        <div class="show-link">
+            <p>show...</p>
+        </div>
+
+
+        <div>
+            <div class="circle_image">
+                <img src="./circle-klein.png">
+            </div>
+
+            <div class="header_item">
+                <h3>Pasta</h3>
+                <p>€8.99</p>
+            </div>
+
+            <div class="menu-image-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.
+                </p>
+
+            </div>
+
+        </div>
+        <div class="show-link">
+            <p>show...</p>
+        </div>
+
+    </div>
+
+    <!-- Menu-blanc -->
+    <div class="whole-column">
+        
+        <div class="menu-blanc-h1">
+            <h1>Menu</h1>
+        </div>
+
+
+        <div class="menu-blanc">
+            
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
+                        vel aspernatur ipsam
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
+                        vel aspernatur ipsam
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
+                        vel aspernatur ipsam
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        menu-column-blanc2 -->
+
+        <div class="menu-column-blanc2">
+
+            <div>
+
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
+                        vel aspernatur ipsam
                     </p>
                 </div>
 
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
-                </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
+            </div>
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
                 </div>
 
-        </section>
-        <section>
-            <div class="second_menu_column2">
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
+                <div class="menu-blanc-text">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
-                </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
-                </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
-                </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
+                        vel aspernatur ipsam
                     </p>
                 </div>
             </div>
-            </div>
-        </section>
-        <section>
-            <div class="second_menu_column3">
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
+
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
                 </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
+
+                <div class="menu-blanc-text">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
-                </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
-                    </p>
-                </div>
-                <div>
-                    <div class="header_item">
-                        <h3>Pasta</h3>
-                        <p>€8.99</p>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
-                        vel aspernatur ipsam itaque error fugiat repellat
-                        dicta laudantium consectetur accusamus modi mollitia, dolore velit quaerat saepe?
+                        vel aspernatur ipsam
                     </p>
                 </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer_box">
-            <div class="location-west">
+        </div>
+
+
+        <!--Menu-column3 -->
+
+        <div class="menu-column-blanc3">
+            <div class="chef">
+                <img src="./Images/chef1 (1).webp" alt="chef">
+            </div>
+
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
+                        vel aspernatur
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
+                        vel aspernatur ipsam
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div class="header_item">
+                    <h3>Pasta</h3>
+                    <p>€8.99</p>
+                </div>
+
+                <div class="menu-blanc-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iste, fuga voluptas nemo
+                        vel aspernatur
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer-wrapper  -->
+    <div class="footer_wrapper">
+        <div class="location-contact-hours">
+            <div class="ul-nav">
                 <ul>
-                    <li>><h3>Contact:</h3>
+                    <li>
+                        <h3>Contact:</h3>
                     </li>
                     <li>Osdorpplein 16</li>
                     <li>1234 AB Amsterdam</li>
                     <li>Tel nr: 1234556</li>
                     <li>Openingstijden ma t/m vr 10:00 - 22:00 uur</li>
-                    <li><i class="lni lni-instagram"></i></li>
-                    <li><i class="lni lni-twitter"></i></li>
-                    <li><i class="lni lni-facebook"></i></li>
+                    <div>
+                        <li><i class="lni lni-instagram"></i></li>
+                        <li><i class="lni lni-twitter"></i></li>
+                        <li><i class="lni lni-facebook"></i></li>
+                    </div>
                 </ul>
             </div>
+        </div>
+        <div class="contact-navigation-info"></div>
+        <div class="ul-nav">
             <ul>
-                <div class="navigate">
-                    <li>
-                        <h3>contact</h3>
-                    </li>
-                    <li>Navigation</li>
-                    <li> 1234 AB Amsterdam</li>
-                    <li> Tel nr: 1234556</li>
+
+                <li>
+                    <h3>contact</h3>
+                </li>
+                <li>Navigation</li>
+                <li> 1234 AB Amsterdam</li>
+                <li> Tel nr: 1234556</li>
             </ul>
-    </footer>
+        </div>
+    </div>
+
 </body>
 
 </html>

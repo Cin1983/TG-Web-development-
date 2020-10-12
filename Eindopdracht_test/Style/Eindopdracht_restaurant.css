@@ -5,12 +5,15 @@ html {
     color: black;
 }
 
-.navigation_bar,
+/* navigation */
+
+
+.navigation-bar,
 a {
     position: sticky;
     width: 100%;
-    font-size: 1.2em;
     color: rgb(255, 0, 119);
+    font-size: 35px;
     text-align: right;
     text-decoration: none;
     top: 0;
@@ -18,36 +21,18 @@ a {
 
 }
 
+
 a:hover {
     color: rgb(55, 0, 255);
 
 }
 
-.banner_box>h1 {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    margin-top: -25%;
-    padding-left: 6.8em;
-}
-
-.banner_box>p {
-position: absolute;
-    top: 5em;
-    right: 17.2em;
-    width: 20%;
-    height: 20%;
-
-}
-
-.banner_box {
-    margin-top: 0;
+.navbar-wrapper {
     background-image: url(./img/cooking.jpg);
     background-size: cover;
     min-height: 50vh;
-    color: rgb(97, 135, 216);
-    font-size: 1.2em;
-
+    /* font-size: 1.2em;
+   */
 }
 
 .image {
@@ -56,17 +41,34 @@ position: absolute;
 
 }
 
+.navbar-text {
+    position: absolute;
+    color: rgb(97, 135, 216);
+    top: 9%;
+    right: 36.7%;
+
+}
+
+.navbar-ptext {
+    position: absolute;
+    width: 20%;
+    color: rgb(97, 135, 216);
+    top: 17%;
+    right: 24%;
+}
+
+
 .button_green {
     position: absolute;
     width: 10%;
     height: 5%;
-    top: 35%;
-    right: 16.8em;
-    font-size: 1em;
+    top: 30%;
+    right: 23.7%;
+    font-size: 100%;
     color: black;
     font-family: Impact;
     background-color: transparent;
-    border: 0.2em solid #4CAF50;
+    border: 4px solid #4CAF50;
 
 }
 
@@ -74,13 +76,13 @@ position: absolute;
     position: absolute;
     width: 10%;
     height: 5%;
-    top: 35%;
-    right: 24em;
-    font-size: 1em;
+    top: 30%;
+    right: 34%;
+    font-size: 100%;
     color: black;
     font-family: Impact;
     background-color: transparent;
-    border: 0.2em solid rgb(255, 0, 76);
+    border: 4px solid rgb(255, 0, 76);
 }
 
 .button_green:hover,
@@ -88,48 +90,138 @@ position: absolute;
     background-color: rgb(55, 0, 255);
 }
 
-.populair_dish_container {
+/* 
+                                        Menubar with image */
+.menu-with-image {
 
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+
 
 }
 
-.populair_dish_container>h1 {
-    font-size: 3em;
+.menu-with-image-h1 {
+    font-size: 17px;
     text-align: center;
 
 }
 
-.populair_dish_container>p {
-    width: 20%;
-    height: 20%
+.menu-image-text {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-top: -5%;
+    margin-right: 40%;
+    margin-left: 25%;
+}
+
+.show-link {
+    display: flex;
+    justify-content: flex-end;
+    width: 20;
+    height: 20;
+    align-items: flex-end;
+
 }
 
 .circle_image {
     display: flex;
     justify-content: space-evenly;
-    width: 15%;
-    height: 15%;
-    margin-left: 0;
+    width: 17%;
+    height: 35%;
+    margin-right: 42%;
+    margin-left: 42%;
+    margin-top: 7%;
+
 }
-
-
 
 .header_item {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 40%;
+    margin-left: 25%;
 }
 
-.chef {}
+/* 
+                                        Menu-blanc */
+    
 
-.second_menu_column1 {}
 
-.second_menu_column2 {}
+    .menu-blanc {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+    margin-top: -5%;
+    /* margin-right: 40%; */
+    margin-left: 25%;
+    
 
-.second_menu_column3 {}
+}
 
-.footer_box {}
+.menu-blanc-h1 {
 
-.location-west {}
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 7%;
+}
 
-.navigate {}
+.chef {
+    width: 50%;
+    /* height: 60%; */
+    margin-bottom:-5.3%;
+    margin-top: -11%;
+}
+
+.menu-blanc-text {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+    width: 60%;
+    margin-right: 40%;
+    margin-left: 25%;
+}
+
+/* Menu-column-blanc2 */
+
+.menu-column-blanc2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+    margin-top:-5%;
+    margin-left: 25%;
+}
+
+.menu-column-blanc3 {
+    display: flex;
+    justify-content: flex-end;
+    /* flex-wrap: wrap; */
+    margin-bottom: 5%;
+    margin-top:-5%;
+}
+
+
+/* Footer_wrapper */
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(128, 179, 128);
+    color: rgb(97, 135, 216);
+    top: 17%;
+    height: 225px;
+    width: 100%;
+    align-items: center;
+}
+
+.location-contact-hours {}
+
+.ul-nav,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.contact-navigation-info {}
+
+.ul-nav {}
