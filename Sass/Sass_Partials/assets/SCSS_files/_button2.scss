@@ -1,0 +1,17 @@
+.body{
+    background: $black;
+}
+
+.button{
+    width:300px;
+    height:150px;
+    font-size:25px;
+    font-family: Impact;
+    background-color:$secondary-color;
+    color:$black;
+    &:hover{
+
+        background: $button-hover-color;
+    }
+    
+}
