@@ -1,0 +1,76 @@
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifF;
+    text-align: center;
+}
+
+p{
+font-family: sans-serif;
+text-align: center;
+}
+
+h1:hover {
+    color: rgba(55, 15, 146, 0.993);
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+h2{
+    margin-top: -5px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    background-color: lawngreen;
+
+}
+
+
+.cloud {
+    width:600px;
+    height: 200px;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+    display: block;
+    margin:auto;
+    margin-bottom: -5%;
+}
+
+a:hover {
+    color: rgb(253, 18, 136);
+    letter-spacing: 4px;
+
+}
+
+
+.cloud1 {
+    font-size: 26px;
+    margin-top: 2px;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+}
+
+.cloud2 {
+    font-size: 18px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+}
+
+
+.image,
+img {
+   display:block;
+   margin:auto;
+    width: 260px;
+    height: 100%;
+
+}
+
+.payment{
+
+    margin-top: 4%;
+    margin-bottom:10%;
+}
