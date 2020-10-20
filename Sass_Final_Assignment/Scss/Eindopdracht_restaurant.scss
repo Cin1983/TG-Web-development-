@@ -1,63 +1,52 @@
-body,
-html {
-    font-family: 'Lobster', cursive;
+
+
+* {
+    box-sizing: border-box;
     margin: 0;
-    color: black;
+    padding: 0;
 }
 
-/* navigation */
+body,
+html {
+    font-family: $font-stack;
+    color: $color_simply_black;
+}
 
 .navigation-bar {
     position: sticky;
-    font-family: 'Lobster', cursive;
+    font-family: $font-stack;
     margin: 0;
     width: 100%;
-    color: rgb(255, 0, 119);
+    color: $color_hotpink;
     font-size: 35px;
     text-align: right;
     text-decoration: none;
     top: 0;
     z-index: 1;
 
+    a {
+        position: sticky;
+        font-family: $font-stack;
+        width: 100%;
+        color: $color_hotpink;
+        font-size: 35px;
+        text-align: right;
+        text-decoration: none;
+        top: 0;
+        z-index: 1;
+
+
+        &:hover {
+            color: $color_puple-ish;
+
+        }
+    }
 }
 
-.navigation-bar >
-a {
-    position: sticky;
-    font-family: 'Lobster', cursive;
-    /* margin: 0; */
-    width: 100%;
-    color: rgb(255, 0, 119);
-    font-size: 35px;
-    text-align: right;
-    text-decoration: none;
-    top: 0;
-    z-index: 1;
-
-}
-
-
-a:hover {
-    color: rgb(55, 0, 255);
-
-}
-
-.navbar-wrapper {
-    background-image: url(./img/cooking.jpg);
-    background-size: cover;
-    min-height: 50vh;
-  
-}
-
-.image {
-    width: 100%;
-    height: 60%;
-
-}
 
 .navbar-text {
     position: absolute;
-    color: rgb(97, 135, 216);
+    color: $color_blue;
     top: 9%;
     right: 36.7%;
 
@@ -66,9 +55,9 @@ a:hover {
 .navbar-ptext {
     position: absolute;
     width: 20%;
-    color: rgb(97, 135, 216);
+    color: $color_blue;
     top: 17%;
-    right:24%;
+    right: 24%;
 }
 
 
@@ -79,10 +68,14 @@ a:hover {
     top: 30%;
     right: 23.7%;
     font-size: 100%;
-    color: black;
+    color: $color_simply_black;
     font-family: Impact;
     background-color: transparent;
-    border: 4px solid #4CAF50;
+    border: 4px solid $color_greenish;
+
+    &:hover {
+        background-color: rgb(55, 0, 255);
+    }
 
 }
 
@@ -93,19 +86,17 @@ a:hover {
     top: 30%;
     right: 34%;
     font-size: 100%;
-    color: black;
+    color: $color_simply_black;
     font-family: Impact;
     background-color: transparent;
-    border: 4px solid rgb(255, 0, 76);
+    border: 4px solid $color_hotpink;
+
+
+    &:hover {
+        background-color: rgb(55, 0, 255);
+    }
 }
 
-.button_green:hover,
-.button_pink:hover {
-    background-color: rgb(55, 0, 255);
-}
-
-/* 
-                                        Menubar with image */
 .menu-with-image {
 
     display: flex;
@@ -117,6 +108,7 @@ a:hover {
 .menu-with-image-h1 {
     font-size: 17px;
     text-align: center;
+ 
 
 }
 
@@ -124,15 +116,15 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     width: 60%;
-    margin-top: -5%;
-    margin-right:45%;
+    margin-top: 5%;
+    margin-right: 45%;
     margin-left: 25%;
 }
 
 .show-link {
-    justify-items:center;
+    justify-items: center;
     text-align: right;
-    padding-right:13%;
+    padding-right: 13%;
     margin-right: 7%;
 
 }
@@ -140,7 +132,7 @@ a:hover {
 .circle_image {
     display: flex;
     justify-content: space-evenly;
-    width: 17%;
+    width: 19%;
     height: 35%;
     margin-right: 42%;
     margin-left: 42%;
@@ -152,23 +144,24 @@ a:hover {
     display: flex;
     justify-content: space-between;
     width: 50%;
+    margin-top:5% ;
     margin-right: 40%;
     margin-left: 25%;
 }
 
 /* 
                                         Menu-blanc */
-    
 
 
-    .menu-blanc {
+
+.menu-blanc {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5%;
-    margin-top: -5%;
-    /* margin-right: 40%; */
+    margin-top:7%;
+
     margin-left: 25%;
-    
+
 
 }
 
@@ -181,15 +174,15 @@ a:hover {
 
 .chef {
     width: 45%;
-    /* height: 60%; */
-    margin-bottom:-5.6%;
+
+    margin-bottom: -5.6%;
     margin-top: -11%;
 }
 
 .menu-blanc-text {
     display: flex;
     justify-content: center;
-    margin-top: -5%;
+    margin-top: 5%;
     width: 60%;
     margin-right: 40%;
     margin-left: 25%;
@@ -201,7 +194,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5%;
-    margin-top:-5%;
+    margin-top: -5%;
     margin-left: 25%;
 }
 
@@ -210,31 +203,32 @@ a:hover {
     justify-content: flex-end;
     /* flex-wrap: wrap; */
     margin-bottom: 5%;
-    margin-top:-5%;
+    margin-top: -5%;
     margin-left: 3%;
 }
 
 
 /* Footer_wrapper */
 
-.footer_wrapper  {
+.footer_wrapper {
     display: flex;
     justify-content: space-evenly;
     font-size: 70%;
-    background-color: rgb(128, 179, 128);
-    color: black;
+    background-color: $color_green;
+    color:$color_simply_black;
     font-family: Verdana, Geneva, Tahoma, sans-serifx;
     top: 17%;
-    /* height: 225px;
-    width: 100%; */
-    /* align-items: center; */
-}
-.footernav > ul,li, a{
 
-font-size:100% ;
-font-family: Verdana, Geneva, Tahoma, sans-serif ;
-color: black;
-text-decoration: none;
+}
+
+.footernav>ul,
+li,
+a {
+
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:$color_simply_black;
+    text-decoration: none;
 
 
 }
@@ -244,7 +238,3 @@ li {
     text-decoration: none;
     list-style-type: none;
 }
-
-/* .contact-navigation-info {}
-
-.ul-nav {} */

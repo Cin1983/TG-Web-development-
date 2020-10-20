@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Game</title>
+    <style>
+        body {
+            background-color: rgb(243, 0, 122);
+        }
+
+        .words button {
+            position: relative;
+            border: 3px solid black;
+            border-radius: .5em;
+            background-color: white;
+            font-family: Impact;
+            width: 10%;
+            padding: .5em;
+            cursor: pointer;
+            transition: background-color .3s ease-in-out;
+            z-index: 1;
+        }
+
+        h1,
+        h3,
+        p {
+            font-family: Impact;
+            display: flex;
+        }
+
+        .words button:focus {
+            outline: none;
+            background-color: grey;
+        }
+
+        .words .fg {
+            position: absolute;
+            content: '';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: white;
+            z-index: 2;
+            transition: width.3s ease-out;
+            overflow: hidden;
+        }
+
+        .words button:hover .fg {
+            width: 0;
+            z-index: 1;
+        }
+
+        .words button:focus .fg {
+            width: 0;
+        }
+
+        .answer {
+            font-size: 2em;
+            font-weight: 900;
+        }
+        
+        #word:hover {
+
+            color: rgb(51, 255, 0);
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Guess the word</h1>
+    <section>
+        <div class="words">
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Together</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Teamwork</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Scrum</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Individual</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Moments</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Like</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Dislike</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Money</span>
+            </button>
+            <button onclick="guess(this)">
+                <div class="fg">Show</div><span>Important</span>
+            </button>
+        </div>
+    </section>
+    <div>
+        <span>
+            <h3>The number of wrong guessing: </h3><span id="count">
+                <h3>0</h3>
+            </span>
+        </span>
+        <p id="label">The correct word is:</p>
+        <p id="word"></p>
+
+    </div>
+
+
+
+
+    <script>
+        let count = 0;
+        // const num =document.getElementById('count').children[0].innerHTML="count";
+
+
+
+        const words = ["Together", "Teamwork", "Scrum", "Individual", "Moments", "Like", "Dislike",
+            "Money", "Important"];
+        const guessingWord = words[Math.round(Math.random() * 8)];
+
+        function guess(btn) {
+            let chosenWord = btn.children[1].innerHTML;
+            count++;
+
+            document.getElementById('count').children[0].innerHTML = count;
+            const guess = document.getElementById('word');
+            if (count === 3) {
+                guess.innerHTML = `${guessingWord} GAME OVER!!!!! `;
+                
+            }
+
+            else if (chosenWord === guessingWord) {
+                guess.innerHTML = `${guessingWord} You WIN!!!`;
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- Analyseer de code en probeer te begrijpen wat er staat.
+Deze applicatie moet het volgende kunnen doen:
+● Het bijhouden van het aantal pogingen voor het raden van het woord.
+● Na 3 keer raden is het game over en moet het volgende tekst op het scherm
+weergegeven worden: “Game Over. The correct word is <het woord dat geraden
+moest worden>”. De p.label kun je hiervoor gebruiken om de tekst op het scherm
+weer te geven.
+● Als het woord goed geraden is dan toon je het volgende tekst op het scherm: “”You
+have guessed the correct word! <het woord dat geraden moest worden>.
+Zie hieronder twee voorbeelden van de applicatie: -->
