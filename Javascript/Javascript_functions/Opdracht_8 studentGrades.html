@@ -5,40 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/Opdracht_8 studentGrade.css">
-    <title>Document</title>
+    <title>Student Grades</title>
 </head>
 
 <body>
 
-    <script>
-        let grade = 6.5;
-
-
-        const students = [
-
-            { 'Naam': 'Willem', 'grade': 3 },
-            { 'Naam': 'Jan', 'grade': 7 },
-            { ' Naam': 'Kim Sing', 'grade': 10 },
-            { 'Naam': 'Samantha', 'grade': 5.5 },
-            { 'Naam': 'Joyce', 'grade': 4 },
-            { 'Naam': 'Gareth', 'grade': 1 }
-        ]
-
-        students.forEach(function (grade) {
-            if (grade > 6.5) {
-                console.log("You have passed the test")
-            } else {
-                console.log("You have failed the test")
-            }
-        }
-
-
-
-
-
-
-
-    </script>
 
     <h2>Wiskunde</h2>
     <table>
@@ -64,19 +35,43 @@
         </tr>
         <tr>
             <td>Joyce</td>
-            <td>4</td>
+            <td class="fail">4</td>
         </tr>
         <tr>
             <td>Gareth</td>
             <td>1</td>
         </tr>
 
-
-    
-
-
     </table>
 
+    <script>
+        let grade = 6.5;
+
+
+        const students = [
+
+            { 'Naam': 'Willem', 'grade': 3 },
+            { 'Naam': 'Jan', 'grade': 7 },
+            { ' Naam': 'Kim Sing', 'grade': 10 },
+            { 'Naam': 'Samantha', 'grade': 5.5 },
+            { 'Naam': 'Joyce', 'grade': 4 },
+            { 'Naam': 'Gareth', 'grade': 1 }
+]
+
+        students.forEach function grade {
+            if (grade > 6.5) {
+                console.log("You have passed the test")
+            } else {
+                console.log("You have failed the test")
+            }
+        }
+
+
+
+
+    </script>
+
 </body>
+
 
 </html>
