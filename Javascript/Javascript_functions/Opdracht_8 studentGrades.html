@@ -11,40 +11,175 @@
 <body>
 
 
-    <h2>Wiskunde</h2>
-    <table>
-        <tr>
-            <th>Naam</th>
-            <th>Cijfer</th>
-        </tr>
-        <tr>
-            <td>Willem</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>Jan</td>
-            <td>7</td>
-        </tr>
-        <tr>
-            <td>Kim Sing</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>Samantha</td>
-            <td>5.5</td>
-        </tr>
-        <tr>
-            <td>Joyce</td>
-            <td class="fail">4</td>
-        </tr>
-        <tr>
-            <td>Gareth</td>
-            <td>1</td>
-        </tr>
+    <!-- column 1 -->
+    <div class="firstTwo_columns">
 
-    </table>
+        <div class="kop">
+            <h2>Wiskunde</h2>
+            <!-- </div> -->
+            <!-- <div class="section_math_column1"> -->
+
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td><input value="3" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input value="7" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input value="10" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input value="5.5" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input value="4" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input value="1" oninput="checkGrade(this)"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <!-- column2 -->
+        <div class="kop">
+            <h2>Natuurkunde</h2>
+
+
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td><input value="7" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input value="5" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input value="8" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input value="6" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input value="9" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input value="5.5" oninput="checkGrade(this)"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- column3 -->
+    <div class="other_columns">
+        <div class="kop">
+
+            <h2>Nederlands</h2>
+
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td><input value="7" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input value="7" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input value="4" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input value="8" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input value="8.5" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input value="4" oninput="checkGrade(this)"></td>
+                </tr>
+
+            </table>
+        </div>
+       
+
+        <!-- column4 -->
+        
+        <div class="kop">
+            <h2>Engels</h2>
+
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Cijfer</th>
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td><input value="6" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input value="6" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input value="5.5" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input value="4.3" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input value="5.5" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input value="8" oninput="checkGrade(this)"></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
 
     <script>
+
+
+                                            // Javascripto_ section
+
+
+
         let grade = 6.5;
 
 
@@ -52,22 +187,41 @@
 
             { 'Naam': 'Willem', 'grade': 3 },
             { 'Naam': 'Jan', 'grade': 7 },
-            { ' Naam': 'Kim Sing', 'grade': 10 },
+            { 'Naam': 'Kim Sing', 'grade': 10 },
             { 'Naam': 'Samantha', 'grade': 5.5 },
             { 'Naam': 'Joyce', 'grade': 4 },
             { 'Naam': 'Gareth', 'grade': 1 }
-]
+        ];
 
-        students.forEach function grade {
-            if (grade > 6.5) {
+        // console.log(students);
+        // students.forEach(checkGrade());
+
+        function checkGrade(grade) {
+            const test = grade.value;
+            console.log(grade.style.background);
+
+            if (test >= 7.5) {
+                grade.style.background = "lime";
+
                 console.log("You have passed the test")
-            } else {
+
+            }else if(test >=5.5){
+                grade.style.background = "green";
+                ('Whoeh you almost failed the test')
+            }
+
+            else {
                 console.log("You have failed the test")
+                grade.style.background = "red";
             }
         }
 
 
+        for (let i= 0; i < 6; i++ ){
+            const exam = students[i].grade;
+            checkGrade(exam); 
 
+        }
 
     </script>
 

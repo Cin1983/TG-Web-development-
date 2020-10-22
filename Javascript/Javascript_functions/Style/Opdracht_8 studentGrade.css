@@ -31,6 +31,24 @@ td, th{
 
 }
 
-.fail{
-    background-color: red;
+
+.firstTwo_columns{
+    display: flex;
+    justify-content: space-evenly;
 }
+
+.other_columns{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+.fail{
+    background-color:red;
+}
+
+
+
