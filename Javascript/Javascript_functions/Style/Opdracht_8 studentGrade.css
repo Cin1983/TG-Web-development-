@@ -45,10 +45,18 @@ td, th{
 }
 
 
-
-.fail{
-    background-color:red;
+.last_column, h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+
+
+
+
+/* .fail{
+    background-color:red;
+} */
 
 
 

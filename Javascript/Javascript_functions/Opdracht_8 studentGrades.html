@@ -131,10 +131,10 @@
 
             </table>
         </div>
-       
+
 
         <!-- column4 -->
-        
+
         <div class="kop">
             <h2>Engels</h2>
 
@@ -173,10 +173,63 @@
     </div>
 
 
+    <div class="last_column">
+        <div>
+            <h2>Het Gemiddelde Resultaat</h2>
+
+            <table>
+                <tr>
+                    <th>Naam</th>
+                    <th>Talen</th>
+                    <th>Beta vakken </th>
+                    <th>Volgende klas? > 6.5 </th>
+
+                </tr>
+                <tr>
+                    <td>Willem</td>
+                    <td><input value="6.5" oninput="checkGrade(this)"></td>
+                    <td><input value="5" oninput="checkGrade(this)"></td>
+                    <td><input value="" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Jan</td>
+                    <td><input value="6.5" oninput="checkGrade(this)"></td>
+                    <td><input value="6" oninput="checkGrade(this)"></td>
+                    <td><input value="" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Kim Sing</td>
+                    <td><input value="4.5" oninput="checkGrade(this)"></td>
+                    <td><input value="9" oninput="checkGrade(this)"></td>
+                    <td><input value="" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Samantha</td>
+                    <td><input value="6" oninput="checkGrade(this)"></td>
+                    <td><input value="5" oninput="checkGrade(this)"></td>
+                    <td><input value="" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Joyce</td>
+                    <td><input value="6.5" oninput="checkGrade(this)"></td>
+                    <td><input value="7" oninput="checkGrade(this)"></td>
+                    <td><input value="" oninput="checkGrade(this)"></td>
+                </tr>
+                <tr>
+                    <td>Gareth</td>
+                    <td><input value="6" oninput="checkGrade(this)"></td>
+                    <td><input value="3" oninput="checkGrade(this)"></td>
+                    <td><input value="" oninput="checkGrade(this)"></td>
+                </tr>
+        </div>
+        </table>
+    </div>
+
+
     <script>
 
 
-                                            // Javascripto_ section
+        // Javascripto_ section
 
 
 
@@ -205,7 +258,7 @@
 
                 console.log("You have passed the test")
 
-            }else if(test >=5.5){
+            } else if (test >= 5.5) {
                 grade.style.background = "green";
                 ('Whoeh you almost failed the test')
             }
@@ -217,11 +270,46 @@
         }
 
 
-        for (let i= 0; i < 6; i++ ){
+        for (let i = 0; i < 6; i++) {
             const exam = students[i].grade;
-            checkGrade(exam); 
+            checkGrade(exam);
 
         }
+
+        const students2 = [
+
+            { 'Naam': 'Willem', 'grade': 6.5,'grade2': 5 },
+            { 'Naam': 'Jan', 'grade': 6.5, 'grade2': 6 },
+            { 'Naam': 'Kim Sing', 'grade': 4.5, 'grade2': 9 },
+            { 'Naam': 'Samantha', 'grade': 6, 'grade2': 5 },
+            { 'Naam': 'Joyce', 'grade': 6.5, 'grade':7 },
+            { 'Naam': 'Gareth', 'grade': 6, 'grade': 3 }
+        ];
+
+
+        function checkPassed (grade, grade2) {
+            const test = grade.value;
+            const test2 =grade2.value
+
+           { if (test + test2 > grade )
+
+                console.log("Yes")
+        }
+        
+        // else even naar kijken 
+                onsole.log("No")
+            }  
+        
+        
+            for (let i = 0; i < 6; i++) {
+            const exam2 = students2[i].grade.grade2;
+            checkPassed(exam2);
+
+        }
+
+
+
+
 
     </script>
 
