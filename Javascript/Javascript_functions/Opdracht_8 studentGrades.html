@@ -227,8 +227,6 @@
 
 
     <script>
-
-
         // Javascripto_ section
 
 
@@ -236,15 +234,33 @@
         let grade = 6.5;
 
 
-        const students = [
+        // const students = [
 
-            { 'Naam': 'Willem', 'grade': 3 },
-            { 'Naam': 'Jan', 'grade': 7 },
-            { 'Naam': 'Kim Sing', 'grade': 10 },
-            { 'Naam': 'Samantha', 'grade': 5.5 },
-            { 'Naam': 'Joyce', 'grade': 4 },
-            { 'Naam': 'Gareth', 'grade': 1 }
-        ];
+        //     {
+        //         'Naam': 'Willem',
+        //         'grade': 3
+        //     },
+        //     {
+        //         'Naam': 'Jan',
+        //         'grade': 7
+        //     },
+        //     {
+        //         'Naam': 'Kim Sing',
+        //         'grade': 10
+        //     },
+        //     {
+        //         'Naam': 'Samantha',
+        //         'grade': 5.5
+        //     },
+        //     {
+        //         'Naam': 'Joyce',
+        //         'grade': 4
+        //     },
+        //     {
+        //         'Naam': 'Gareth',
+        //         'grade': 1
+        //     }
+        // ];
 
         // console.log(students);
         // students.forEach(checkGrade());
@@ -261,56 +277,78 @@
             } else if (test >= 5.5) {
                 grade.style.background = "green";
                 ('Whoeh you almost failed the test')
-            }
-
-            else {
+            } else {
                 console.log("You have failed the test")
                 grade.style.background = "red";
             }
         }
 
 
-        for (let i = 0; i < 6; i++) {
-            const exam = students[i].grade;
-            checkGrade(exam);
+        // for (let i = 0; i < 6; i++) {
+        //     const exam = students[i].grade;
+        //     checkGrade(exam);
+        // }
 
-        }
+        // const students2 = [
 
-        const students2 = [
+        //     {
+        //         'Naam': 'Willem',
+        //         'grade': 6.5,
+        //         'grade2': 5
+        //     },
+        //     {
+        //         'Naam': 'Jan',
+        //         'grade': 6.5,
+        //         'grade2': 6
+        //     },
+        //     {
+        //         'Naam': 'Kim Sing',
+        //         'grade': 4.5,
+        //         'grade2': 9
+        //     },
+        //     {
+        //         'Naam': 'Samantha',
+        //         'grade': 6,
+        //         'grade2': 5
+        //     },
+        //     {
+        //         'Naam': 'Joyce',
+        //         'grade': 6.5,
+        //         'grade2': 7
+        //     },
+        //     {
+        //         'Naam': 'Gareth',
+        //         'grade': 6,
+        //         'grade2': 3
+        //     }
+        // ];
 
-            { 'Naam': 'Willem', 'grade': 6.5,'grade2': 5 },
-            { 'Naam': 'Jan', 'grade': 6.5, 'grade2': 6 },
-            { 'Naam': 'Kim Sing', 'grade': 4.5, 'grade2': 9 },
-            { 'Naam': 'Samantha', 'grade': 6, 'grade2': 5 },
-            { 'Naam': 'Joyce', 'grade': 6.5, 'grade':7 },
-            { 'Naam': 'Gareth', 'grade': 6, 'grade': 3 }
-        ];
+            // students2[5].grade;
+            // students2[5].grade2;
 
 
-        function checkPassed (grade, grade2) {
+        function checkPassed(grade, grade2) {
+            
+            console.log(grade);
+            console.log(grade2);
+
             const test = grade.value;
-            const test2 =grade2.value
+            const test2 = grade2.value
 
-           { if (test + test2 > grade )
-
+            if (test + test2 / 2 > 6.5) {
                 console.log("Yes")
-        }
-        
-        // else even naar kijken 
-                onsole.log("No")
-            }  
-        
-        
-            for (let i = 0; i < 6; i++) {
-            const exam2 = students2[i].grade.grade2;
-            checkPassed(exam2);
+            } else {
+                console.log("No")
+            }
 
+
+            // for (let i = 0; i < 6; i++) {
+            //     const exam2 = students2[i].grade.grade2;
+            //     checkPassed(exam2);
+            // }
         }
 
-
-
-
-
+        checkPassed(students[5].grade, students[5].grade2);
     </script>
 
 </body>
