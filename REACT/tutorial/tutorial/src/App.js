@@ -1,7 +1,10 @@
-import react, { useState } from 'react'
-import './App.css';
+import React from 'react';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch,
+Route} from 'react-router-dom'
+import './App.css';
+import Home from './components/Pages/Home'
+
 
 function App() {
   return (
@@ -10,7 +13,8 @@ function App() {
       <Navbar />
       <Switch>
 
-        <Route path='/'exact />
+          <Route path='/' exact components=
+            {Home}/>
       </Switch>
       </Router>
     </>
