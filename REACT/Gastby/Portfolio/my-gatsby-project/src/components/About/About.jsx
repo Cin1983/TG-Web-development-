@@ -25,7 +25,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="About" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -37,16 +37,28 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
+                <p className="about-wrapper__info-text">{paragraphOne || ''}</p>
+
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphTwo ||
+                    `Hyacinthia has her own eclectic style and is very creatively skilled. 
+                    She really wants to learn how to create beautiful animated websites and is very eager to learn and evolve herself to get this done. 
+`}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    `
+                    That's why she started an online course to become a Full Stack Web Developer in 2019 followed by the  remote Web Development coding program from TechGrounds.
+                    This coding program is very intense but you will be able to work as a Junior Web Developer afterwards. In this course they will teach you how to work with: 
+                    HTML5, CSS, JavaScript, SASS, Bootstrap, REACT and more.
+`}
                 </p>
+
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree ||
+                    `After six months you will be able to develop and improve your coding & soft skills true the community of TechGrounds  & of course an employer who is willing to fine-tune your skills. 
+                    Hyacintia has a history of working as a management assistent and administrative helpdesk specialist in all kinds of industries (software development, law, banking, real estate and more).
+                    She is strong in operation management and has graduated from Schoevers.`}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
@@ -54,7 +66,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href="https://www.linkedin.com/in/hyacinthia-maria-groeizaam-22886722/"
                     >
                       Resume
                     </a>
