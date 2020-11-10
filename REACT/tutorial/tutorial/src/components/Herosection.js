@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './Herosection.css';
-import video from './Videos/video-2.mp4';
+import video from './Videos/Heelal.mp4';
 
 function Herosection() {
     return (
