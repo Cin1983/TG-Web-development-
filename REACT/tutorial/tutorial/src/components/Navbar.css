@@ -19,7 +19,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color:hsl(330, 95%, 49%);
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -59,12 +59,12 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 6px solid rgb(169, 235, 15);
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: rgb(169, 235, 15);
 }
 
 .nav-links-mobile {
@@ -104,11 +104,11 @@
     text-align: center;
     padding: 2rem;
     width: 100%;
-    display: table;
+    display: table ;
   }
 
   .nav-links:hover {
-    background-color: #fff;
+    background-color: rgb(73, 28, 179);
     color: #242424;
     border-radius: 0;
   }
